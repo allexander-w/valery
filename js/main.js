@@ -69,12 +69,19 @@ const reviewSwiper = new Swiper(".review__swiper", {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // breakpoints: {
-  //   1200: {
-  //     slidesPerView: 1,
-  //     loop: false,
-  //   },
-  // }
+});
+
+const sad = new Swiper(".bar-slider", {
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
 
 const accordion = document.querySelectorAll('.dropdown');
@@ -87,7 +94,6 @@ for (i = 0; i < accordion.length; i++) {
 
 document.querySelector('.burger').addEventListener("click", () => {
   document.querySelector(".header__navigation").classList.add("header__open")
-  // document.querySelector(".burger").classList.toggle("burger__close")
   document.querySelector("html").classList.add("overflow")
 })
 

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,9 +15,8 @@
   <body>
     <header class="header">
       <div class="container header__inner">
-        <a href="./index.html">
+        <a href="./index.html" class="header__logotype">
           <img
-            class="header__logotype"
             src="assets/img/logo.svg"
             alt="logotype"
           />
@@ -25,28 +24,28 @@
 
         <nav class="header__navigation">
           <ul class="header__navigation-items">
-            <li class="header__navigation-item">
+            <li class="header__navigation-item" title="Шоу программы">
               <a href="#" class="header__navigation-link"> Шоу программы </a>
             </li>
-            <li class="header__navigation-item">
+            <li class="header__navigation-item" title="Мастер-классы">
               <a href="#" class="header__navigation-link"> Мастер-классы </a>
             </li>
-            <li class="header__navigation-item">
+            <li class="header__navigation-item" title="Услуги">
               <a href="#" class="header__navigation-link"> Услуги </a>
             </li>
-            <li class="header__navigation-item">
+            <li class="header__navigation-item" title="Портфолио">
               <a href="#" class="header__navigation-link"> Портфолио </a>
             </li>
-            <li class="header__navigation-item">
+            <li class="header__navigation-item" title="Медиа">
               <a href="#" class="header__navigation-link"> Медиа </a>
             </li>
-            <li class="header__navigation-item">
+            <li class="header__navigation-item" title="Блог">
               <a href="#" class="header__navigation-link"> Блог </a>
             </li>
-            <li class="header__navigation-item">
+            <li class="header__navigation-item" title="Отзывы">
               <a href="#" class="header__navigation-link"> Отзывы </a>
             </li>
-            <li class="header__navigation-item">
+            <li class="header__navigation-item" title="Контакты">
               <a href="#" class="header__navigation-link"> Контакты </a>
             </li>
           </ul>
@@ -56,16 +55,17 @@
             <a href="#"><img src="assets/img/tg.svg" alt="tg" /></a>
 
             <div>
-              <a href="tel:+7 (926) 578-91-32" class="phone"
-                >+7 (926) 578-91-32</a
-              >
+              <a href="tel:+7(926)578-91-32" class="phone">+7 (926) 578-91-32</a>
 
               <p class="consultation">получить консультацию</p>
 
               <p class="location">Москва</p>
             </div>
+
+            <div class="burger__close"></div>
           </div>
         </nav>
+        <div class="burger"></div>
       </div>
     </header>
 
@@ -125,7 +125,7 @@
         <h2 class="heading">Шоу программы</h2>
 
         <div class="programs-list">
-          <a href="#" class="programs-list__item">
+          <a href="#" class="programs-list__item classic">
             <h3 class="programs-list__title">
               Классические <br />
               бальные
@@ -143,12 +143,12 @@
 
             <div class="arrow"></div>
 
-            <div class="programs-list__img classic">
+            <div class="programs-list__img">
               <img src="assets/img/classic.png" alt="img" />
             </div>
           </a>
 
-          <a href="#" class="programs-list__item">
+          <a href="#" class="programs-list__item latino">
             <h3 class="programs-list__title">
               Латино <br />
               американские
@@ -165,12 +165,12 @@
 
             <div class="arrow"></div>
 
-            <div class="programs-list__img latino">
+            <div class="programs-list__img">
               <img src="assets/img/latino.png" alt="img" />
             </div>
           </a>
 
-          <a href="#" class="programs-list__item">
+          <a href="#" class="programs-list__item spectacle">
             <h3 class="programs-list__title">
               Спектакль <br />
               «В двух шагах»
@@ -178,12 +178,12 @@
 
             <div class="arrow"></div>
 
-            <div class="programs-list__img spectacle">
+            <div class="programs-list__img">
               <img src="assets/img/spectacle.png" alt="img" />
             </div>
           </a>
 
-          <a href="#" class="programs-list__item">
+          <a href="#" class="programs-list__item war">
             <h3 class="programs-list__title">Военные танцы</h3>
 
             <ul class="dance-list">
@@ -197,12 +197,12 @@
 
             <div class="arrow"></div>
             
-            <div class="programs-list__img war">
+            <div class="programs-list__img">
               <img src="assets/img/war.png" alt="img" />
             </div>
           </a>
 
-          <a href="#" class="programs-list__item">
+          <a href="#" class="programs-list__item history">
             <h3 class="programs-list__title">
               Исторические <br />
               танцы
@@ -216,12 +216,12 @@
 
             <div class="arrow"></div>
 
-            <div class="programs-list__img history">
+            <div class="programs-list__img">
               <img src="assets/img/history.png" alt="img" />
             </div>
           </a>
 
-          <a href="#" class="programs-list__item">
+          <a href="#" class="programs-list__item old">
             <h3 class="programs-list__title">90-ые</h3>
 
             <ul class="dance-list">
@@ -233,12 +233,12 @@
 
             <div class="arrow"></div>
 
-            <div class="programs-list__img old">
+            <div class="programs-list__img">
               <img src="assets/img/90.png" alt="img" />
             </div>
           </a>
 
-          <a href="#" class="programs-list__item">
+          <a href="#" class="programs-list__item sport">
             <h3 class="programs-list__title">
               Спортивные <br />
               номера
@@ -252,12 +252,12 @@
 
             <div class="arrow"></div>
 
-            <div class="programs-list__img sport">
+            <div class="programs-list__img">
               <img src="assets/img/sport.png" alt="img" />
             </div>
           </a>
 
-          <a href="#" class="programs-list__item">
+          <a href="#" class="programs-list__item waiter">
             <h3 class="programs-list__title">
               Танцующие <br />
               официанты
@@ -269,12 +269,12 @@
 
             <div class="arrow"></div>
 
-            <div class="programs-list__img waiter">
+            <div class="programs-list__img">
               <img src="assets/img/waiter.png" alt="img" />
             </div>
           </a>
 
-          <a href="#" class="programs-list__item">
+          <a href="#" class="programs-list__item solo">
             <h3 class="programs-list__title">
               Сольные <br />
               номера
@@ -291,12 +291,12 @@
 
             <div class="arrow"></div>
 
-            <div class="programs-list__img solo">
+            <div class="programs-list__img">
               <img src="assets/img/solo.png" alt="img" />
             </div>
           </a>
 
-          <a href="#" class="programs-list__item">
+          <a href="#" class="programs-list__item chicago">
             <h3 class="programs-list__title">Чикаго</h3>
 
             <ul class="dance-list">
@@ -308,12 +308,12 @@
 
             <div class="arrow"></div>
 
-            <div class="programs-list__img chicago">
+            <div class="programs-list__img">
               <img src="assets/img/chicago.png" alt="img" />
             </div>
           </a>
 
-          <a href="#" class="programs-list__item">
+          <a href="#" class="programs-list__item newyear">
             <h3 class="programs-list__title">Новый год</h3>
 
             <ul class="dance-list">
@@ -324,12 +324,12 @@
 
             <div class="arrow"></div>
 
-            <div class="programs-list__img newyear">
+            <div class="programs-list__img">
               <img src="assets/img/newyear.png" alt="img" />
             </div>
           </a>
 
-          <a href="#" class="programs-list__item">
+          <a href="#" class="programs-list__item style">
             <h3 class="programs-list__title">Стиляги</h3>
 
             <ul class="dance-list">
@@ -340,7 +340,7 @@
 
             <div class="arrow"></div>
 
-            <div class="programs-list__img style">
+            <div class="programs-list__img">
               <img src="assets/img/style.png" alt="img" />
             </div>
           </a>
@@ -432,7 +432,7 @@
 
     <section class="about">
       <div class="container">
-        <h2 class="heading">КРАТКО О НАС</h2>
+        <h2 class="heading heading__center">КРАТКО О НАС</h2>
 
         <p class="about__descr">
           Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и 
@@ -536,6 +536,252 @@
       </div>
     </section>
 
+    <section class="review">
+      <div class="container">
+        <h2 class="heading heading__center"> ОТЗЫВЫ </h2>
+
+        <div class="review__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/review.png" alt="review">
+
+              <div class="review__desc">
+                <p>СОВЕТ ФЕДЕРАЦИИ</p>
+                <p>03.03.20</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/review.png" alt="review">
+
+              <div class="review__desc">
+                <p>СОВЕТ ФЕДЕРАЦИИ</p>
+                <p>03.03.20</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/review.png" alt="review">
+
+              <div class="review__desc">
+                <p>СОВЕТ ФЕДЕРАЦИИ</p>
+                <p>03.03.20</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/review.png" alt="review">
+
+              <div class="review__desc">
+                <p>СОВЕТ ФЕДЕРАЦИИ</p>
+                <p>03.03.20</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/review.png" alt="review">
+
+              <div class="review__desc">
+                <p>СОВЕТ ФЕДЕРАЦИИ</p>
+                <p>03.03.20</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/review.png" alt="review">
+
+              <div class="review__desc">
+                <p>СОВЕТ ФЕДЕРАЦИИ</p>
+                <p>03.03.20</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/review.png" alt="review">
+
+              <div class="review__desc">
+                <p>СОВЕТ ФЕДЕРАЦИИ</p>
+                <p>03.03.20</p>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <div class="swiper-button-prev">
+              <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="37.7217" y="37.2215" width="36.8201" height="36.8201" rx="3.61171" transform="rotate(-180 37.7217 37.2215)" stroke="#C63B3B" stroke-width="0.802602"/>
+                <path d="M24.6113 30.5828L11.5178 18.8116L24.6113 7.03984" stroke="#C63B3B" stroke-width="0.802602"/>
+              </svg>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next">
+              <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <rect x="0.901301" y="0.401301" width="36.8201" height="36.8201" rx="3.61171" stroke="#C63B3B" stroke-width="0.802602"/>
+                <path d="M14.0117 7.04004L27.1053 18.8112L14.0117 30.583" stroke="#C63B3B" stroke-width="0.802602"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="button">
+          Перейти в отзывы
+        </div>
+      </div>
+    </section>
+
+    <section class="FAQ">
+      <div class="container">
+        <h2 class="heading"> Ответы на частые вопросы </h2>
+
+        <div class="dropdown">
+          <div class="dropdown__header">
+            <p>Хочу пригласить ваш коллектив на частный праздник. Это возможно?</p>
+          </div>
+
+          <div class="dropdown__content">
+            <p>
+              Один танец может длиться от 3 до 10 минут. Все заивсит от выбранного вами номера.
+              Мы можем сделать номер на то время которое вам удобно, но это тобговаривается заранее.
+            </p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="dropdown__header">
+            <p>Могу ли я выбрать танцы самостоятельно?</p>
+          </div>
+
+          <div class="dropdown__content">
+            <p>
+              Один танец может длиться от 3 до 10 минут. Все заивсит от выбранного вами номера.
+              Мы можем сделать номер на то время которое вам удобно, но это тобговаривается заранее.
+            </p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="dropdown__header">
+            <p>Как проходит ваше выступление?</p>
+          </div>
+
+          <div class="dropdown__content">
+            <p>
+              Один танец может длиться от 3 до 10 минут. Все заивсит от выбранного вами номера.
+              Мы можем сделать номер на то время которое вам удобно, но это тобговаривается заранее.
+            </p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="dropdown__header">
+            <p>Какова продолжительность одного танца?</p>
+          </div>
+
+          <div class="dropdown__content">
+            <p>
+              Один танец может длиться от 3 до 10 минут. Все заивсит от выбранного вами номера.
+              Мы можем сделать номер на то время которое вам удобно, но это тобговаривается заранее.
+            </p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="dropdown__header">
+            <p>Что такое мастер-класс?</p>
+          </div>
+
+          <div class="dropdown__content">
+            <p>
+              Один танец может длиться от 3 до 10 минут. Все заивсит от выбранного вами номера.
+              Мы можем сделать номер на то время которое вам удобно, но это тобговаривается заранее.
+            </p>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="dropdown__header">
+            <p>Как забронировать дату?</p>
+          </div>
+
+          <div class="dropdown__content">
+            <p>
+              Один танец может длиться от 3 до 10 минут. Все заивсит от выбранного вами номера.
+              Мы можем сделать номер на то время которое вам удобно, но это тобговаривается заранее.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer__inner container">
+        <div class="footer__top">
+          <div class="footer__left">
+            <div class="footer__logo">
+              <img src="assets/img/footer-logo.svg" alt="logotype" />
+            </div>
+      
+            <ul class="footer-menu">
+              <li class="footer-menu__item"><a href="">Шоу программы</a></li>
+              <li class="footer-menu__item"><a href="">Мастер-классы</a></li>
+              <li class="footer-menu__item"><a href="">Услуги</a></li>
+              <li class="footer-menu__item"><a href="">Портфолио</a></li>
+              <li class="footer-menu__item"><a href="">Медиа</a></li>
+              <li class="footer-menu__item"><a href="">Блог</a></li>
+              <li class="footer-menu__item"><a href="">Отзывы</a></li>
+              <li class="footer-menu__item"><a href="">Контакты</a></li>
+            </ul>
+      
+            <div class="footer-contact">
+              <div class="footer-contact__list">
+                <a href="tel:+7(926)578-91-32" class="phone">+7 (926) 578-91-32</a>
+                <a href="mailto:show@dance-valery.ru" class="mail">show@dance-valery.ru</a>
+                <p class="home">Россия, Москва</p>
+              </div>
+      
+              <div class="footer-media">
+                <div class="footer-media__icons">
+                  <a href=""><img src="assets/img/wp.svg" alt="" /></a>
+                  <a href=""><img src="assets/img/tg.svg" alt="" /></a>
+                </div>
+      
+                <p>Напишите нам в мессенджерах</p>
+              </div>
+      
+              <div class="footer-media">
+                <div class="footer-media__icons">
+                  <a href=""><img src="assets/img/Instagram.svg" alt="" /></a>
+                  <a href=""><img src="assets/img/Youtube.svg" alt="" /></a>
+                </div>
+      
+                <p>Подписывайтесь на нас <br> и следите за новостями</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__form">
+            <h3>Остались вопросы?</h3>
+      
+            <p>Закажите обратный звонок заполнив форму обратной связи</p>
+      
+            <form>
+              <input type="text" placeholder="Имя">
+              <input type="text" placeholder="Телефон">
+
+              <button class="button">
+                Связаться
+              </button>
+            </form>
+
+            <div class="footer-contact__media">
+              <a href=""><img src="assets/img/wp.svg" alt="" /></a>
+              <a href=""><img src="assets/img/tg.svg" alt="" /></a>
+              <a href=""><img src="assets/img/Instagram.svg" alt="" /></a>
+              <a href=""><img src="assets/img/Youtube.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>Танцевальный коллектив “Valery”</p>
+          <a href="#">Все права защищены</a>
+          <p>2010 - 2023</p>
+          <p>Предложения с сайта не являются публичной офертой</p>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 

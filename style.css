@@ -1496,7 +1496,21 @@ form .button {
     margin-bottom: 40px;
   }
   .about__team {
-    margin-bottom: 180px;
+    margin-bottom: 20px;
+    order: 3;
+  }
+  .about__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__inner .heading.heading__center {
+    order: 1;
+  }
+  .about__descr {
+    order: 2;
+  }
+  .about__swiper {
+    order: 4;
   }
 }
 

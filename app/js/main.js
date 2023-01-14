@@ -11,7 +11,8 @@ const swiper = new Swiper(".swiper", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 2,
+      spaceBetween: 20,
+      slidesPerView: 'auto',
       grid: {
         rows: 1,
       },
@@ -29,6 +30,7 @@ const swiper = new Swiper(".swiper", {
 const aboutSwiper = new Swiper(".about__swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
+
   scrollbar: {
     el: ".swiper-scrollbar",
   },
@@ -61,6 +63,15 @@ const reviewSwiper = new Swiper(".review__swiper", {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 'auto'
+    },
+    767: {
+      slidesPerView: 3,
+    },
+  }
 });
 
 const sad = new Swiper(".bar-slider", {

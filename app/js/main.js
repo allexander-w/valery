@@ -40,6 +40,7 @@ const aboutSwiper = new Swiper(".about__swiper", {
       direction: "vertical",
       scrollbar: false,
       navigation: false,
+      allowTouchMove: false,
     },
     767: {
       slidesPerView: 3,

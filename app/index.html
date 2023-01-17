@@ -57,7 +57,7 @@
             <div>
               <a href="tel:+7(926)578-91-32" class="phone">+7 (926) 578-91-32</a>
 
-              <p class="consultation">получить консультацию</p>
+              <p class="consultation" data-class="popup-wrapper__expanded">получить консультацию</p>
 
               <p class="location">Москва</p>
             </div>
@@ -79,6 +79,39 @@
       </div>
     </header>
 
+    <section class="popup-wrapper">
+      <div class="popup">
+        <h2 class="title">ТАНЦЕВАЛЬНОЕ ШОУ <br> VALERY</h2>
+        <p class="subtitle">Оставьте заявку на шоу - программу, <br> и мы свяжемся с вами</p>
+
+        <form>
+          <div>
+            <input type="text" placeholder="Ваше имя">
+            <p class="main-input__error-msg">обязательное поле</p>
+          </div>
+
+          <div>
+            <input type="text" placeholder="E-mail">
+            <p class="main-input__error-msg">обязательное поле</p>
+          </div>
+
+          <div>
+            <input type="text" placeholder="Контактный номер">
+            <p class="main-input__error-msg">обязательное поле</p>
+          </div>
+
+          <div class="policy">
+            <input type="checkbox">
+            <p>Я согласен с политикой конфидициальности</p>
+          </div>
+
+          <button class="button">
+            Отправить заявку
+          </button>
+        </form>
+      </div>
+    </section>
+
     <section class="header-section">
       <img
         class="background"
@@ -96,7 +129,7 @@
         </p>
 
         <div class="header-section__block">
-          <div class="button">Связаться</div>
+          <div class="button" data-class="popup-wrapper__expanded">Связаться</div>
 
           <a href="#" class="presentation">
             <div><img src="img/index/button_play.svg" alt="play" /></div>
@@ -135,7 +168,7 @@
         <h2 class="heading">Шоу программы</h2>
 
         <div class="programs-list">
-          <a href="#" class="programs-list__item classic">
+          <a href="./classic.html" class="programs-list__item classic">
             <h3 class="programs-list__title">
               Классические <br />
               бальные
@@ -158,7 +191,7 @@
             </div>
           </a>
 
-          <a href="#" class="programs-list__item latino">
+          <a href="./latino.html" class="programs-list__item latino">
             <h3 class="programs-list__title">
               Латино <br />
               американские
@@ -356,7 +389,7 @@
           </a>
         </div>
 
-        <a href="#" class="button">Ознакомиться</a>
+        <a href="./programs.html" class="button">Ознакомиться</a>
       </div>
     </section>
 
@@ -383,7 +416,6 @@
           <div class="clients-list__item">
             <img src="img/index/gkd.png" alt="gkd" />
           </div>
-        </div>
         </div>
 
         <div class="swiper">
@@ -435,7 +467,7 @@
           </div>
         </div>
 
-        <a href="#" class="button">
+        <a href="./media.html" class="button">
           Перейти в медиа
         </a>
     </section>
@@ -552,62 +584,62 @@
 
         <div class="review__swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <a href="#" class="swiper-slide">
               <img src="img/index/review.png" alt="review">
 
               <div class="review__desc">
                 <p>СОВЕТ ФЕДЕРАЦИИ</p>
                 <p>03.03.20</p>
               </div>
-            </div>
-            <div class="swiper-slide">
+            </a>
+            <a href="#" class="swiper-slide">
               <img src="img/index/review.png" alt="review">
 
               <div class="review__desc">
                 <p>СОВЕТ ФЕДЕРАЦИИ</p>
                 <p>03.03.20</p>
               </div>
-            </div>
-            <div class="swiper-slide">
+            </a>
+            <a href="#" class="swiper-slide">
               <img src="img/index/review.png" alt="review">
 
               <div class="review__desc">
                 <p>СОВЕТ ФЕДЕРАЦИИ</p>
                 <p>03.03.20</p>
               </div>
-            </div>
-            <div class="swiper-slide">
+            </a>
+            <a href="#" class="swiper-slide">
               <img src="img/index/review.png" alt="review">
 
               <div class="review__desc">
                 <p>СОВЕТ ФЕДЕРАЦИИ</p>
                 <p>03.03.20</p>
               </div>
-            </div>
-            <div class="swiper-slide">
+            </a>
+            <a href="#" class="swiper-slide">
               <img src="img/index/review.png" alt="review">
 
               <div class="review__desc">
                 <p>СОВЕТ ФЕДЕРАЦИИ</p>
                 <p>03.03.20</p>
               </div>
-            </div>
-            <div class="swiper-slide">
+            </a>
+            <a href="#" class="swiper-slide">
               <img src="img/index/review.png" alt="review">
 
               <div class="review__desc">
                 <p>СОВЕТ ФЕДЕРАЦИИ</p>
                 <p>03.03.20</p>
               </div>
-            </div>
-            <div class="swiper-slide">
+            </a>
+            <a href="#" class="swiper-slide">
               <img src="img/index/review.png" alt="review">
 
               <div class="review__desc">
                 <p>СОВЕТ ФЕДЕРАЦИИ</p>
                 <p>03.03.20</p>
               </div>
-            </div>
+            </a>
           </div>
           <div class="pagination">
             <div class="swiper-button-prev">
@@ -626,7 +658,7 @@
           </div>
         </div>
 
-        <a href="#" class="button">
+        <a href="./reviews.html" class="button">
           Перейти в отзывы
         </a>
       </div>

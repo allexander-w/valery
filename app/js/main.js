@@ -75,7 +75,7 @@ const reviewSwiper = new Swiper(".review__swiper", {
   }
 });
 
-const sad = new Swiper(".bar-slider", {
+const barSlider = new Swiper(".bar-slider", {
   slidesPerView: 1,
   loop: true,
   pagination: {
@@ -87,6 +87,29 @@ const sad = new Swiper(".bar-slider", {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const reviewSwiperCards = new Swiper(".review__swiper-cards", {
+  slidesPerView: 3,
+  loop: true,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    767: {
+      slidesPerView: 3,
+    },
+  }
+})
 
 const accordion = document.querySelectorAll('.dropdown');
 
@@ -104,4 +127,18 @@ document.querySelector('.burger').addEventListener("click", () => {
 document.querySelector('.burger__close').addEventListener("click", () => {
   document.querySelector(".header__navigation").classList.remove("header__open")
   document.querySelector("html").classList.remove("overflow")
+})
+
+const clickHandler = document.querySelectorAll(".popup-wrapper__expanded")
+const html = document.querySelector("html")
+
+window.addEventListener("click", e => {
+  if (e.target && e.target.classList.contains("popup-wrapper")) {
+    document.querySelector(".popup-wrapper").classList.remove("popup-wrapper__expanded")
+    html.style.overflow = ""
+  }
+  if (e.target && e.target.getAttribute("data-class") === "popup-wrapper__expanded") {
+    document.querySelector(".popup-wrapper").classList.add("popup-wrapper__expanded")
+    html.style.overflow = "hidden"
+  }
 })

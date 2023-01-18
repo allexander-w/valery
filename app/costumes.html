@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valery</title>
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header header__dark">
+      <div class="container header__inner">
+        <a href="./index.html" class="header__logotype">
+          <img
+            src="img/header/logo-white.svg"
+            alt="logotype"
+          />
+        </a>
+
+        <nav class="header__navigation">
+          <ul class="header__navigation-items">
+            <li class="header__navigation-item" title="Шоу программы">
+              <a href="./programs.html" class="header__navigation-link"> Шоу программы </a>
+            </li>
+            <li class="header__navigation-item" title="Мастер-классы">
+              <a href="./master-class.html" class="header__navigation-link"> Мастер-классы </a>
+            </li>
+            <li class="header__navigation-item" title="Услуги">
+              <a href="./services.html" class="header__navigation-link"> Услуги </a>
+            </li>
+            <li class="header__navigation-item" title="Портфолио">
+              <a href="./portfolio.html" class="header__navigation-link"> Портфолио </a>
+            </li>
+            <li class="header__navigation-item" title="Медиа">
+              <a href="./media.html" class="header__navigation-link"> Медиа </a>
+            </li>
+            <li class="header__navigation-item" title="Блог">
+              <a href="./blog.html" class="header__navigation-link"> Блог </a>
+            </li>
+            <li class="header__navigation-item" title="Отзывы">
+              <a href="./reviews.html" class="header__navigation-link"> Отзывы </a>
+            </li>
+            <li class="header__navigation-item" title="Контакты">
+              <a href="./contacts.html" class="header__navigation-link"> Контакты </a>
+            </li>
+          </ul>
+
+          <div class="header__contacts">
+            <a href="#"><img src="img/header/whatsApp.svg" alt="whatsApp" /></a>
+            <a href="#"><img src="img/header/telegram.svg" alt="telegram" /></a>
+
+            <div>
+              <a href="tel:+7(926)578-91-32" class="phone">+7 (926) 578-91-32</a>
+
+              <p class="consultation" data-class="popup-wrapper__expanded">получить консультацию</p>
+
+              <p class="location">Москва</p>
+            </div>
+
+            <div class="burger__close"></div>
+          </div>
+        </nav>
+
+        <div class="header__icons">
+          <a href="#">
+            <img src="img/header/whatsApp.svg" alt="whatsApp">
+          </a>
+          <a href="#">
+            <img src="img/header/telegram.svg" alt="telegram">
+          </a>
+        </div>
+        
+        <div class="burger"></div>
+      </div>
+    </header>
+
+    <section class="popup-wrapper">
+      <div class="popup">
+        <h2 class="title">ТАНЦЕВАЛЬНОЕ ШОУ <br> VALERY</h2>
+        <p class="subtitle">Оставьте заявку на шоу - программу, <br> и мы свяжемся с вами</p>
+  
+        <form>
+          <div>
+            <input type="text" placeholder="Ваше имя">
+            <p class="main-input__error-msg">обязательное поле</p>
+          </div>
+  
+          <div>
+            <input type="text" placeholder="E-mail">
+            <p class="main-input__error-msg">обязательное поле</p>
+          </div>
+  
+          <div>
+            <input type="text" placeholder="Контактный номер">
+            <p class="main-input__error-msg">обязательное поле</p>
+          </div>
+  
+          <div class="policy">
+            <input type="checkbox">
+            <p>Я согласен с политикой конфидициальности</p>
+          </div>
+  
+          <button class="button">
+            Отправить заявку
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="header-section header-section__dark costumes">
+      <img
+        class="background"
+        src="img/costumes/costumes-background.png"
+        alt="header-background"
+      />
+
+      <div class="container header-section__heading">
+        <div class="breadcrumbs">
+          <div class="breadcrums-item">
+            <a href="/index.html">Главная</a>
+          </div>
+          <div class="breadcrums-item">
+            <a href="/index.html">Услуги</a>
+          </div>
+        </div>
+        <h1 class="header-section__title">АРЕНДА КОСТЮМОВ</h1>
+
+        <p class="header-section__desc">
+          Вы можете арендовать костюмы шоу-балета на любое тематическое мероприятие. Это могут быть бальные платья в пол для бала-маскарада, платья 20-30х годов для  вечеринки в стиле «Гетсби», пышные стиляжные юбки
+          для ретро-вечера 50-60-х и многое другое. 
+        </p>
+
+        <div class="programs-list__info">
+          <ul class="info-list">
+            <li class="info-list__item">от 1 пары</li>
+            <li class="info-list__item">от 3 - 5 минут</li>
+            <li class="info-list__item">Смена костюмов</li>
+          </ul>
+          <div class="buttons">
+            <div class="button" data-class="popup-wrapper__expanded">Связаться</div>
+            <div class="button button__white" data-class="popup-wrapper__expanded">ОСТАВИТЬ ЗАЯВКУ</div>
+          </div>
+        </div>
+
+        <div class="header-content">
+          <h3>Создание образа</h3>
+          <p>По вашему желанию стилист может создать любой имидж, будь то героиня вашего любимого фильма или же фантазийный, придуманный вами, индивидуальный образ. Макияж, конечно, тоже может быть разным
+            по вашему усмотрению. Или же это профессиональный сценический make-up, или же более лаконичный вечерний. Наши стилисты-визажисты позаботятся о том, чтобы он был гармоничен и подходил к Вашему образу.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="costumes-content">
+      <div class="container">
+        <div class="header-content">
+          <h3>Создание образа</h3>
+          <p>По вашему желанию стилист может создать любой имидж, будь то героиня вашего любимого фильма или же фантазийный, придуманный вами, индивидуальный образ. Макияж, конечно, тоже может быть разным
+            по вашему усмотрению. Или же это профессиональный сценический make-up, или же более лаконичный вечерний. Наши стилисты-визажисты позаботятся о том, чтобы он был гармоничен и подходил к Вашему образу.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer costumes-footer">
+      <div class="footer__inner container">
+        <div class="footer__top">
+          <div class="footer__left">
+            <a href="./index.html" class="footer__logo">
+              <img src="img/footer/footer-logo.svg" alt="logotype" />
+            </a>
+      
+            <ul class="footer-menu">
+              <li class="footer-menu__item"><a href="./programs.html">Шоу программы</a></li>
+              <li class="footer-menu__item"><a href="./master-class.html">Мастер-классы</a></li>
+              <li class="footer-menu__item"><a href="./services.html">Услуги</a></li>
+              <li class="footer-menu__item"><a href="./portfolio.html">Портфолио</a></li>
+              <li class="footer-menu__item"><a href="./media.html">Медиа</a></li>
+              <li class="footer-menu__item"><a href="./blog.html">Блог</a></li>
+              <li class="footer-menu__item"><a href="./reviews.html">Отзывы</a></li>
+              <li class="footer-menu__item"><a href="./contacts.html">Контакты</a></li>
+            </ul>
+      
+            <div class="footer-contact">
+              <div class="footer-contact__list">
+                <a href="tel:+7(926)578-91-32" class="phone">+7 (926) 578-91-32</a>
+                <a href="mailto:show@dance-valery.ru" class="mail">show@dance-valery.ru</a>
+                <p class="home">Россия, Москва</p>
+              </div>
+      
+              <div class="footer-media">
+                <div class="footer-media__icons">
+                  <a href="#"><img src="img/footer/whatsApp.svg" alt="whatsApp" /></a>
+                  <a href="#"><img src="img/footer/telegram.svg" alt="telegram" /></a>
+                </div>
+      
+                <p>Напишите нам в мессенджерах</p>
+              </div>
+      
+              <div class="footer-media">
+                <div class="footer-media__icons">
+                  <a href="#"><img src="img/footer/instagram.svg" alt="instagram" /></a>
+                  <a href="#"><img src="img/footer/youtube.svg" alt="youtube" /></a>
+                </div>
+      
+                <p>Подписывайтесь на нас <br> и следите за новостями</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__form">
+            <h3>Остались вопросы?</h3>
+      
+            <p>Закажите обратный звонок заполнив форму обратной связи</p>
+      
+            <form>
+              <input type="text" placeholder="Имя">
+              <input type="text" placeholder="Телефон">
+
+              <button class="button">
+                Связаться
+              </button>
+            </form>
+
+            <div class="footer-contact__media">
+              <a href="#"><img src="img/footer/whatsApp.svg" alt="whatsApp" /></a>
+              <a href="#"><img src="img/footer/telegram.svg" alt="telegram" /></a>
+              <a href="#"><img src="img/footer/instagram.svg" alt="instagram" /></a>
+              <a href="#"><img src="img/footer/youtube.svg" alt="youtube" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>Танцевальный коллектив “Valery”</p>
+          <a href="#">Все права защищены</a>
+          <p>2010 - 2023</p>
+          <p>Предложения с сайта не являются публичной офертой</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

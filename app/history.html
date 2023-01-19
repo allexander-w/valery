@@ -11,6 +11,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+
   </head>
   <body>
     <header class="header header__dark">
@@ -115,7 +120,7 @@
     <section class="header-section header-section__dark program-page history-page">
       <img
         class="background"
-        src="img/solo/history-background.png"
+        src="img/history/history-background.png"
         alt="header-background"
       />
 
@@ -143,9 +148,9 @@
         </div>
 
         <ul class="dance-list">
-          <li class="dance-list__item"><a href="#">Полонез</a></li>
-          <li class="dance-list__item"><a href="#">Менуэт</a></li>
-          <li class="dance-list__item"><a href="#">Мастер - класс</a></li>
+          <li class="dance-list__item"><a href="./history.html#Polonez">Полонез</a></li>
+          <li class="dance-list__item"><a href="./history.html#Menuet">Менуэт</a></li>
+          <li class="dance-list__item"><a href="./history.html#Master-Class">Мастер - класс</a></li>
         </ul>
       </div>
     </section>
@@ -153,7 +158,7 @@
     <section class="programs program-page">
       <div class="container">
         <div class="programs-list programs__main">
-          <div class="programs-list__card main-card">
+          <div id="Polonez" class="programs-list__card main-card">
             <div class="main-card__left">
               <h3 class="programs-list__title">
                 ПОЛОНЕЗ
@@ -212,7 +217,7 @@
             </div>
           </div>
 
-          <div class="programs-list__card main-card">
+          <div id="Menuet" class="programs-list__card main-card">
             <div class="main-card__left">
               <h3 class="programs-list__title">
                 Менуэт
@@ -271,7 +276,7 @@
             </div>
           </div>
 
-          <div class="programs-list__card main-card">
+          <div id="Master-Class" class="programs-list__card main-card">
             <div class="main-card__left">
               <h3 class="programs-list__title">
                 Бальный мастер - Класс
@@ -411,6 +416,7 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
     <script src="js/main.js"></script>
   </body>

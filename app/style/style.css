@@ -36,6 +36,7 @@ html {
   overflow-x: hidden;
   background: #f6f6f6;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 html.overflow {
   overflow: hidden;
@@ -176,7 +177,7 @@ h1 {
   width: 0;
   height: 1px;
   background-color: transparent;
-  transition: all 0.4s ease-out;
+  transition: all 0.3s ease-out;
 }
 .header__navigation-item:hover::before {
   width: 100%;
@@ -374,7 +375,7 @@ h1 {
 .header-section__block {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 32px;
   margin-bottom: 200px;
 }
 .button {
@@ -399,6 +400,9 @@ h1 {
   background: transparent!important;
   border: 1px solid rgba(154, 25, 25, 0.35);
 }
+.button.more {
+  display: none;
+}
 .header-section__block .button {
   width: 188px;
 }
@@ -409,6 +413,9 @@ h1 {
   grid-template-rows: 60px;
   width: 205px;
   gap: 9px;
+}
+.presentation:hover .icon-presentation {
+  background: rgba(217,48,48,0.69) url(../img/play.svg) 55% 50% no-repeat;
 }
 .presentation span {
   font-weight: 400;
@@ -622,7 +629,7 @@ h1 {
 
 .programs .button {
   width: 238px;
-  margin: 0 auto 243px;
+  margin: 95px auto 243px;
 }
 .clients {
   margin-bottom: 260px;
@@ -2230,6 +2237,9 @@ right: -250px;
   color: #fff !important;
   width: 254px;
 }
+.flashmob-content .button__white:hover {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
 .flashmob-footer {
   background: #000;
 }
@@ -2257,6 +2267,27 @@ right: -250px;
 
 .programs.master-class {
   margin-bottom: 150px;
+}
+
+.main-card .buttons {
+  max-width: 440px;
+}
+.clients .swiper .swiper-slide:hover .icon-presentation {
+  display: flex;
+  opacity: 1;
+}
+.clients .swiper .swiper-slide:hover p {
+  opacity: 0;
+  display: none;
+}
+.clients .swiper .icon-presentation {
+  transition: all .3s ease;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  display: none;
 }
 
 @media (max-width: 1980px) {
@@ -3117,6 +3148,13 @@ right: -250px;
   }
   .old-page::before {
     left: 0;
+  }
+  .programs .button {
+    display: none;
+  }
+  .button.more {
+    margin: 70px auto 117px;
+    display: flex;
   }
 }
 

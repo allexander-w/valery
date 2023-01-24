@@ -317,7 +317,7 @@ h1 {
   margin-bottom: 110px;
 }
 .header-section .dance-list {
-  max-width: 960px;
+  max-width: 980px;
   gap: 10px;
 }
 .header-section .dance-list__item {
@@ -329,9 +329,9 @@ h1 {
   transition: all .3s ease-out;
 }
 .header-section .dance-list__item a {
-  padding: 7px 15px;
+  padding: 7px 18px;
 }
-.header-section .dance-list__item:hover {
+.dance-list__item:hover {
   border: 1px solid #C63B3B;
   color: #C63B3B;
 }
@@ -541,21 +541,24 @@ h1 {
 }
 
 .dance-list__item {
-  padding: 3px 12px;
+  display: flex;
   border: 1px solid #8e8e8e;
   border-radius: 20px;
   color: #8e8e8e;
+}
+.dance-list__item a {
+  padding: 3px 12px;
 }
 .arrow {
   position: absolute;
   bottom: 44px;
   background: center / cover no-repeat url(../img/arrow.svg);
-  width: 160px;
+  width: 165px;
   height: 14px;
   transition: all 0.3s ease;
 }
 .programs-list__item:hover .arrow {
-  width: 170px;
+  width: 175px;
 }
 .programs-list__img {
   position: absolute;
@@ -1542,7 +1545,7 @@ right: -250px;
 .waiter-page {
   position: relative;
 }
-.classic-page::before, .latino-page::before,
+
 .styles-page::before, .military-page::before,
 .chicago-page::before, .solo-page::before,
 .history-page::before, .old-page::before,
@@ -2555,9 +2558,6 @@ right: -250px;
   .header-section__heading {
     padding-top: 142px;
   }
-  .header-section.header-section__dark .background {
-    left: 25%;
-  }
   .header-section.costumes .background {
     left: 50%;
     height: 870px;
@@ -2802,7 +2802,7 @@ right: -250px;
     margin-bottom: 142px;
   }
 
-  .programs-list__card::after {
+  /* .programs-list__card::after {
     content: '';
     position: absolute;
     left: 0;
@@ -2811,7 +2811,7 @@ right: -250px;
     width: 100%;
     height: 506px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 34.1%, #FCFCFC 88.91%);
-  }
+  } */
   .programs-list__card {
     padding: 0;
   }
@@ -3196,12 +3196,7 @@ right: -250px;
   .header-section__dark.header-section {
     padding-bottom: 60px;
   }
-  .header-section__dark.header-section::before {
-    background: linear-gradient(7.29deg, #000000 7.28%, rgba(0, 0, 0, 0) 77.43%), linear-gradient(250.27deg, #000000, -3.49%, rgba(0, 0, 0, 0) 57.93%);
-    bottom: 0;
-    left: 0;
-  }
-  .header-section::before {
+  /* .header-section::before {
     content: "";
     position: absolute;
     background: linear-gradient(358.71deg, #F6F6F6 34.1%, rgba(255, 255, 255, 0) 93.47%);
@@ -3209,7 +3204,7 @@ right: -250px;
     bottom: 0;
     width: 100%;
     height: -webkit-fill-available;
-  }
+  } */
   .header-section.header-ball {
     padding-bottom: 350px;
   }
@@ -3247,6 +3242,11 @@ right: -250px;
     overflow: auto;
     padding-bottom: 10px;
     margin-right: -15px;
+    gap: 8px;
+  }
+  .header-section .dance-list__item {
+    font-size: 14px;
+    line-height: 15px;
   }
   .header-section .dance-list__item a {
     display: flex;
@@ -3302,6 +3302,8 @@ right: -250px;
   }
   .header-section__title {
     max-width: 360px;
+    font-size: 50px;
+    line-height: 49px;
   }
   .header-section__block {
     margin-bottom: 80px;
@@ -3784,11 +3786,6 @@ right: -250px;
   .header-section.contacts::before {
     background: linear-gradient(179.17deg, rgba(0, 0, 0, 0) 39.11%, #000000 99.19%), linear-gradient(176.82deg, #000000 3.8%, rgba(0, 0, 0, 0) 77.39%);
   }
-  .classic-page.header-section::before {
-    background: linear-gradient(351.78deg, rgba(0, 0, 0, 0) -6.51%, rgba(0, 0, 0, 0) 53.24%), linear-gradient(90.22deg, #000000 5.03%, rgba(0, 0, 0, 0) 51.11%), linear-gradient(170.57deg, #000000 7.12%, rgba(0, 0, 0, 0) 59.9%);
-    left: -50%;
-    width: -webkit-fill-available;
-  }
   .latino-page.header-section::before {
     background: linear-gradient(2.93deg, rgb(0, 0, 0) -2.78%, rgba(0, 0, 0, 0) 75.64%), linear-gradient(179.87deg, #000000 0.11%, rgba(0, 0, 0, 0) 31.81%);
   }
@@ -3967,6 +3964,9 @@ right: -250px;
     font-size: 16px;
     line-height: 24px;
   }
+  .arrow {
+    bottom: 30px;
+  }
 }
   
 
@@ -3977,14 +3977,11 @@ right: -250px;
   }
   .header-section .background {
     height: 75%;
-    /* transform: translateX(-50%) scale(1.2);
-    height: 40%; */
-  }
-  .header-section.header-section__dark .background {
-    left: 0;
   }
   .header-section.latino-page .background {
-    left: -50%;
+    width: 100vw;
+    left: 0;
+    transform: translateX(0);
   }
   .header-section.header-ball .background {
     left: -1270px;
@@ -4256,6 +4253,44 @@ right: -250px;
     line-height: 14px;
     height: 75px;
   }
+  .programs-list__item {
+    padding: 20px;
+  }
+  .programs-list__item.classic .programs-list__img {
+    right: -105px;
+  }
+  .programs-list__item .dance-list {
+    width: 270px;
+  }
+  .programs-list__item.latino .programs-list__img {
+    right: -95px;
+  }
+  .programs-list__item.spectacle .programs-list__img,
+  .programs-list__item.war .programs-list__img {
+    right: -45px;
+  }
+  .programs-list__item.history .programs-list__img {
+    right: -135px;
+  }
+  .programs-list__item.old .programs-list__img {
+    right: -125px;
+  }
+  .programs-list__item.sport .programs-list__img {
+    right: -115px;
+  }
+  .programs-list__item.waiter .programs-list__img,
+  .programs-list__item.solo .programs-list__img {
+    right: -145px;
+  }
+  .programs-list__item.chicago .programs-list__img {
+    right: -80px;
+  }
+  .programs-list__item.newyear .programs-list__img {
+    right: -155px;
+  }
+  .programs-list__item.style .programs-list__img {
+    right: -125px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -4299,11 +4334,11 @@ right: -250px;
     max-width: 305px;
   }
   h1 {
-    font-size: 44px;
-    line-height: 48px;
+    font-size: 44px !important;
+    line-height: 48px !important;
   }
   .header-section .background {
-    left: 40%;
+    /* left: 40%; */
     /* transform: translateX(-60%) scale(1.2); */
   }
   .statistic-list__item {

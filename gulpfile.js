@@ -56,7 +56,7 @@ const serve = (cb) => {
     server: {
       baseDir: "./dist"
     },
-    tunnel: true
+    // tunnel: true
   })
 
   watch('app/**.html', series(html)).on("change", sync.reload)

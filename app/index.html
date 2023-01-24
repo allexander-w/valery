@@ -117,11 +117,20 @@
     </section>
 
     <section class="header-section">
-      <img
+      <picture>
+        <source media="(max-width:767px)" srcset="img/index/mobile-bg.png">
+        <img
+          class="background"
+          src="img/index/desktop-bg.png"
+          alt="main-background"
+        />
+      </picture>
+
+      <!-- <img
         class="background"
         src="img/index/main-background.png"
         alt="main-background"
-      />
+      /> -->
 
       <div class="container header-section__heading">
         <h1 class="header-section__title">ШОУ - БАЛЕТ НА ВАШЕ МЕРОПРИЯТИЕ</h1>
@@ -172,20 +181,20 @@
         <h2 class="heading">Шоу программы</h2>
 
         <div class="programs-list">
-          <a href="./classic.html" class="programs-list__item classic">
+          <div class="programs-list__item classic">
             <h3 class="programs-list__title">
               Классические <br />
               бальные
             </h3>
 
             <ul class="dance-list">
-              <li class="dance-list__item">"Мой нежный зверь"</li>
-              <li class="dance-list__item">Мастер-класс</li>
-              <li class="dance-list__item">Вальс "Маскарад"</li>
-              <li class="dance-list__item">Медленный вальс</li>
-              <li class="dance-list__item">Вальс "Метель"</li>
-              <li class="dance-list__item">Танго</li>
-              <li class="dance-list__item">Квикстеп</li>
+              <li class="dance-list__item"> <a href="./classic.html">"Мой нежный зверь"</a> </li>
+              <li class="dance-list__item"> <a href="./classic.html">Мастер-класс</a> </li>
+              <li class="dance-list__item"> <a href="./classic.html">Вальс "Маскарад"</a> </li>
+              <li class="dance-list__item"> <a href="./classic.html">Медленный вальс</a> </li>
+              <li class="dance-list__item"> <a href="./classic.html">Вальс "Метель"</a> </li>
+              <li class="dance-list__item"> <a href="./classic.html">Танго</a> </li>
+              <li class="dance-list__item"> <a href="./classic.html">Квикстеп</a> </li>
             </ul>
 
             <div class="arrow"></div>
@@ -193,21 +202,21 @@
             <div class="programs-list__img">
               <img src="img/index/classic.png" alt="classic" />
             </div>
-          </a>
+          </div>
 
-          <a href="./latino.html" class="programs-list__item latino">
+          <div class="programs-list__item latino">
             <h3 class="programs-list__title">
               Латино <br />
               американские
             </h3>
 
             <ul class="dance-list">
-              <li class="dance-list__item">Самба</li>
-              <li class="dance-list__item">Ча-ча-ча</li>
-              <li class="dance-list__item">Румба</li>
-              <li class="dance-list__item">Мастер-класс</li>
-              <li class="dance-list__item">Пасодоболь</li>
-              <li class="dance-list__item">Джайв</li>
+              <li class="dance-list__item"> <a href="./latino.html">Самба</a></li>
+              <li class="dance-list__item"> <a href="./latino.html">Ча-ча-ча</a> </li>
+              <li class="dance-list__item"> <a href="./latino.html">Румба</a> </li>
+              <li class="dance-list__item"> <a href="./latino.html">Мастер-класс</a> </li>
+              <li class="dance-list__item"> <a href="./latino.html">Пасодоболь</a> </li>
+              <li class="dance-list__item"> <a href="./latino.html">Джайв</a> </li>
             </ul>
 
             <div class="arrow"></div>
@@ -215,9 +224,9 @@
             <div class="programs-list__img">
               <img src="img/index/latino.png" alt="latino" />
             </div>
-          </a>
+          </div>
 
-          <a href="#" class="programs-list__item spectacle">
+          <div class="programs-list__item spectacle">
             <h3 class="programs-list__title">
               Спектакль <br />
               «В двух шагах»
@@ -228,18 +237,18 @@
             <div class="programs-list__img">
               <img src="img/index/spectacle.png" alt="spectacle" />
             </div>
-          </a>
+          </div>
 
-          <a href="#" class="programs-list__item war">
+          <div class="programs-list__item war">
             <h3 class="programs-list__title">Военные танцы</h3>
 
             <ul class="dance-list">
-              <li class="dance-list__item">«Синий платочек»</li>
-              <li class="dance-list__item">«Смуглянка»</li>
-              <li class="dance-list__item">«Эй, Андрюша»</li>
-              <li class="dance-list__item">Мастер - класс</li>
-              <li class="dance-list__item">«Утомленное солнце»</li>
-              <li class="dance-list__item">«День победы»</li>
+              <li class="dance-list__item"> <a href="./military.html">«Синий платочек»</a> </li>
+              <li class="dance-list__item"> <a href="./military.html">«Смуглянка»</a> </li>
+              <li class="dance-list__item"> <a href="./military.html">«Эй, Андрюша»</a> </li>
+              <li class="dance-list__item"> <a href="./military.html">Мастер - класс</a> </li>
+              <li class="dance-list__item"> <a href="./military.html">«Утомленное солнце»</a> </li>
+              <li class="dance-list__item"> <a href="./military.html">«День победы»</a> </li>
             </ul>
 
             <div class="arrow"></div>
@@ -247,18 +256,18 @@
             <div class="programs-list__img">
               <img src="img/index/war.png" alt="war" />
             </div>
-          </a>
+          </div>
 
-          <a href="#" class="programs-list__item history">
+          <div class="programs-list__item history">
             <h3 class="programs-list__title">
               Исторические <br />
               танцы
             </h3>
 
             <ul class="dance-list">
-              <li class="dance-list__item">Полонез</li>
-              <li class="dance-list__item">Менуэт</li>
-              <li class="dance-list__item">Мастер - класс</li>
+              <li class="dance-list__item"> <a href="./history.html">Полонез</a> </li>
+              <li class="dance-list__item"> <a href="./history.html">Менуэт</a> </li>
+              <li class="dance-list__item"> <a href="./history.html">Мастер - класс</a> </li>
             </ul>
 
             <div class="arrow"></div>
@@ -266,16 +275,16 @@
             <div class="programs-list__img">
               <img src="img/index/history.png" alt="history" />
             </div>
-          </a>
+          </div>
 
-          <a href="#" class="programs-list__item old">
+          <div class="programs-list__item old">
             <h3 class="programs-list__title">90-ые</h3>
 
             <ul class="dance-list">
-              <li class="dance-list__item">Диско</li>
-              <li class="dance-list__item">Марио</li>
-              <li class="dance-list__item">Аэробика</li>
-              <li class="dance-list__item">Мастер - класс</li>
+              <li class="dance-list__item"> <a href="./old.html">Диско</a> </li>
+              <li class="dance-list__item"> <a href="./old.html">Марио</a> </li>
+              <li class="dance-list__item"> <a href="./old.html">Аэробика</a> </li>
+              <li class="dance-list__item"> <a href="./old.html">Мастер - класс</a> </li>
             </ul>
 
             <div class="arrow"></div>
@@ -283,18 +292,18 @@
             <div class="programs-list__img">
               <img src="img/index/old.png" alt="old" />
             </div>
-          </a>
+          </div>
 
-          <a href="#" class="programs-list__item sport">
+          <div class="programs-list__item sport">
             <h3 class="programs-list__title">
               Спортивные <br />
               номера
             </h3>
 
             <ul class="dance-list">
-              <li class="dance-list__item">Купол</li>
-              <li class="dance-list__item">Флаги</li>
-              <li class="dance-list__item">Триколор</li>
+              <li class="dance-list__item"> <a href="./sport.html">Купол</a> </li>
+              <li class="dance-list__item"> <a href="./sport.html">Флаги</a> </li>
+              <li class="dance-list__item"> <a href="./sport.html">Триколор</a> </li>
             </ul>
 
             <div class="arrow"></div>
@@ -302,16 +311,16 @@
             <div class="programs-list__img">
               <img src="img/index/sport.png" alt="sport" />
             </div>
-          </a>
+          </div>
 
-          <a href="#" class="programs-list__item waiter">
+          <div class="programs-list__item waiter">
             <h3 class="programs-list__title">
               Танцующие <br />
               официанты
             </h3>
 
             <ul class="dance-list">
-              <li class="dance-list__item">Мастер - класс</li>
+              <li class="dance-list__item"> <a href="./waiter.html">Мастер - класс</a> </li>
             </ul>
 
             <div class="arrow"></div>
@@ -319,21 +328,21 @@
             <div class="programs-list__img">
               <img src="img/index/waiter.png" alt="waiter" />
             </div>
-          </a>
+          </div>
 
-          <a href="#" class="programs-list__item solo">
+          <div class="programs-list__item solo">
             <h3 class="programs-list__title">
               Сольные <br />
               номера
             </h3>
 
             <ul class="dance-list">
-              <li class="dance-list__item">Кармен</li>
-              <li class="dance-list__item">Танго «Ревность»</li>
-              <li class="dance-list__item">Румба «Caruso»</li>
-              <li class="dance-list__item">La-La-Land</li>
-              <li class="dance-list__item">Румба «На пути к тебе»</li>
-              <li class="dance-list__item">Румба «The man i love»</li>
+              <li class="dance-list__item"> <a href="./solo.html">Кармен</a> </li>
+              <li class="dance-list__item"> <a href="./solo.html">Танго «Ревность»</a> </li>
+              <li class="dance-list__item"> <a href="./solo.html">Румба «Caruso»</a> </li>
+              <li class="dance-list__item"> <a href="./solo.html">La-La-Land</a> </li>
+              <li class="dance-list__item"> <a href="./solo.html">Румба «На пути к тебе»</a> </li>
+              <li class="dance-list__item"> <a href="./solo.html">Румба «The man i love»</a> </li>
             </ul>
 
             <div class="arrow"></div>
@@ -341,16 +350,16 @@
             <div class="programs-list__img">
               <img src="img/index/solo.png" alt="solo" />
             </div>
-          </a>
+          </div>
 
-          <a href="#" class="programs-list__item chicago">
+          <div class="programs-list__item chicago">
             <h3 class="programs-list__title">Чикаго</h3>
 
             <ul class="dance-list">
-              <li class="dance-list__item">Hit The Road Jack</li>
-              <li class="dance-list__item">Казино рояль</li>
-              <li class="dance-list__item">Аргентинское танго</li>
-              <li class="dance-list__item">Мастер - класс</li>
+              <li class="dance-list__item"> <a href="./chicago.html">Hit The Road Jack</a> </li>
+              <li class="dance-list__item"> <a href="./chicago.html">Казино рояль</a> </li>
+              <li class="dance-list__item"> <a href="./chicago.html">Аргентинское танго</a> </li>
+              <li class="dance-list__item"> <a href="./chicago.html">Мастер - класс</a> </li>
             </ul>
 
             <div class="arrow"></div>
@@ -358,15 +367,15 @@
             <div class="programs-list__img">
               <img src="img/index/chicago.png" alt="chicago" />
             </div>
-          </a>
+          </div>
 
-          <a href="#" class="programs-list__item newyear">
+          <div class="programs-list__item newyear">
             <h3 class="programs-list__title">Новый год</h3>
 
             <ul class="dance-list">
-              <li class="dance-list__item">Marry Christmas</li>
-              <li class="dance-list__item">Мастер - класс</li>
-              <li class="dance-list__item">Вальс «Метель»</li>
+              <li class="dance-list__item"> <a href="./newYear.html">Marry Christmas</a> </li>
+              <li class="dance-list__item"> <a href="./newYear.html">Мастер - класс</a> </li>
+              <li class="dance-list__item"> <a href="./newYear.html">Вальс «Метель»</a> </li>
             </ul>
 
             <div class="arrow"></div>
@@ -374,15 +383,15 @@
             <div class="programs-list__img">
               <img src="img/index/newYear.png" alt="newYear" />
             </div>
-          </a>
+          </div>
 
-          <a href="#" class="programs-list__item style">
+          <div class="programs-list__item style">
             <h3 class="programs-list__title">Стиляги</h3>
 
             <ul class="dance-list">
-              <li class="dance-list__item">Буги-Вуги</li>
-              <li class="dance-list__item">Рок-н-ролл</li>
-              <li class="dance-list__item">Мастер - класс</li>
+              <li class="dance-list__item"> <a href="./styles.html">Буги-Вуги</a> </li>
+              <li class="dance-list__item"> <a href="./styles.html">Рок-н-ролл</a> </li>
+              <li class="dance-list__item"> <a href="./styles.html">Мастер - класс</a> </li>
             </ul>
 
             <div class="arrow"></div>
@@ -390,7 +399,7 @@
             <div class="programs-list__img">
               <img src="img/index/style.png" alt="style" />
             </div>
-          </a>
+          </div>
         </div>
 
         <a href="./programs.html" class="button">Ознакомиться</a>

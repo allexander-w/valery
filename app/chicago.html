@@ -117,11 +117,14 @@
     </section>
 
     <section class="header-section header-section__dark program-page chicago-page">
-      <img
-        class="background"
-        src="img/chicago/chicago-background.png"
-        alt="header-background"
-      />
+      <picture>
+        <source media="(max-width:767px)" srcset="img/chicago/mobile-bg.png">
+        <img
+          class="background"
+          src="img/chicago/desktop-bg.png"
+          alt="header-background"
+        />
+      </picture>
 
       <div class="container header-section__heading">
         <div class="breadcrumbs">

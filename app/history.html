@@ -118,11 +118,14 @@
     </section>
 
     <section class="header-section header-section__dark program-page history-page">
-      <img
-        class="background"
-        src="img/history/history-background.png"
-        alt="header-background"
-      />
+      <picture>
+        <source media="(max-width:767px)" srcset="img/history/mobile-bg.png">
+        <img
+          class="background"
+          src="img/history/desktop-bg.png"
+          alt="header-background"
+        />
+      </picture>
 
       <div class="container header-section__heading">
         <div class="breadcrumbs">

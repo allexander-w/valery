@@ -117,11 +117,15 @@
     </section>
 
     <section class="header-section header-section__dark program-page styles-page">
-      <img
-        class="background"
-        src="img/styles/styles-background.png"
-        alt="header-background"
-      />
+      <picture>
+        <source media="(max-width:480px)" srcset="img/styles/mobile-bg.png">
+        <source media="(max-width:767px)" srcset="img/styles/tablet-bg.png">
+        <img
+          class="background"
+          src="img/styles/desktop-bg.png"
+          alt="header-background"
+        />
+      </picture>
 
       <div class="container header-section__heading">
         <div class="breadcrumbs">

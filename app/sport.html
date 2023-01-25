@@ -117,11 +117,15 @@
     </section>
 
     <section class="header-section header-section__dark program-page sport-page">
-      <img
-        class="background"
-        src="img/sport/sport-background.png"
-        alt="header-background"
-      />
+      <picture>
+        <source media="(max-width:480px)" srcset="img/sport/mobile-bg.png">
+        <source media="(max-width:767px)" srcset="img/sport/tablet-bg.png">
+        <img
+          class="background"
+          src="img/sport/desktop-bg.png"
+          alt="header-background"
+        />
+      </picture>
 
       <div class="container header-section__heading">
         <div class="breadcrumbs">

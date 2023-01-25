@@ -117,11 +117,15 @@
     </section>
 
     <section class="header-section header-section__dark program-page military-page">
-      <img
-        class="background"
-        src="img/military/military-background.png"
-        alt="header-background"
-      />
+      <picture>
+        <source media="(max-width:480px)" srcset="img/military/mobile-bg.png">
+        <source media="(max-width:767px)" srcset="img/military/tablet-bg.png">
+        <img
+          class="background"
+          src="img/military/desktop-bg.png"
+          alt="header-background"
+        />
+      </picture>
 
       <div class="container header-section__heading">
         <div class="breadcrumbs">

@@ -203,8 +203,6 @@ h1 {
   cursor: pointer;
   animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
   transition: all .3s ease;
-  /* float: left; */
-  /* margin: 5px 15px 5px 5px; */
 }
 .icon-presentation:hover {
   background: rgba(217,48,48,0.69) url(../img/play.svg) 55% 50% no-repeat;
@@ -286,7 +284,6 @@ h1 {
   position: relative;
   padding-top: 140px;
   margin-bottom: 140px;
-  /*height: 100vh;*/
 }
 .header-section.header-section__dark {
   color: #fff;
@@ -495,7 +492,6 @@ h1 {
 }
 
 .programs-list {
-  /* margin-bottom: 80px; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1125,7 +1121,6 @@ form .button {
 .dropdown__content {
   position: relative;
   max-height: 0;
-  /* height: 0; */
   font-size: 24px;
   line-height: 36px;
   color: #858585;
@@ -1179,22 +1174,6 @@ form .button {
   font-size: 16px;
   line-height: 22px;
 }
-/* .footer-menu__item::before {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  width: 0;
-  height: 1px;
-  background-color: transparent;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-}
-.footer-menu__item:hover::before {
-  width: 100%;
-  left: 0;
-  background-color: #c63b3d;
-} */
 
 .footer-contact {
   display: flex;
@@ -1537,71 +1516,6 @@ right: -250px;
 .spectacle-page .footer {
   background: transparent;
 }
-.classic-page, .latino-page,
-.styles-page, .military-page,
-.chicago-page, .solo-page,
-.history-page, .old-page,
-.sport-page, .newYear-page,
-.waiter-page {
-  position: relative;
-}
-
-.styles-page::before, .military-page::before,
-.chicago-page::before, .solo-page::before,
-.history-page::before, .old-page::before,
-.sport-page::before, .newYear-page::before,
-.waiter-page::before {
-  content: "";
-  position: absolute;
-  left: 15%;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(351.78deg, rgba(0, 0, 0, 0) -6.51%, rgba(0, 0, 0, 0) 53.24%), linear-gradient(90.22deg, #000000 5.03%, rgba(0, 0, 0, 0) 51.11%), linear-gradient(170.57deg, #000000 7.12%, rgba(0, 0, 0, 0) 59.9%);
-}
-.latino-page::before {
-  background: linear-gradient(89.33deg, rgba(0, 0, 0) -0.65%, rgba(0, 0, 0, 0) 49.01%), linear-gradient(183.36deg, #000000 2.77%, rgba(0, 0, 0, 0) 61.18%);
-  left: 35%;
-}
-.styles-page::before {
-  background: linear-gradient(90deg, #000000 5.08%, rgba(0, 0, 0, 0) 34.66%), linear-gradient(180deg, rgb(0, 0, 0) -2.52%, rgba(0, 0, 0, 0) 98.65%);
-  left: 5%;
-}
-.military-page::before {
-  background: linear-gradient(88.88deg, #000000 1.75%, rgba(0, 0, 0, 0) 32.72%), linear-gradient(275.18deg, rgba(0, 0, 0, 0.99) 14.68%, rgba(0, 0, 0, 0) 45.25%), linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 63.64%);
-  left: 40%;
-  width: 70%;
-}
-.chicago-page::before {
-  left: 80%;
-  background: linear-gradient(270.63deg, #000000 3.29%, rgba(0, 0, 0, 0) 30.31%), linear-gradient(90.29deg, #000000 5.85%, rgba(0, 0, 0, 0) 37.81%), linear-gradient(177.11deg, #000000 8.51%, rgba(0, 0, 0, 0) 51.21%);
-  transform: translateX(-50%);
-}
-.solo-page::before {
-  background: linear-gradient(91.07deg, #000000 1.81%, rgba(0, 0, 0, 0) 31.98%), linear-gradient(175.04deg, #000000 2.22%, rgba(0, 0, 0, 0) 81.96%);
-  left: 25%;
-}
-.history-page::before {
-  background: linear-gradient(91.4deg, #000000 5.97%, rgba(0, 0, 0, 0) 70.61%), linear-gradient(177.37deg, #000000 2.19%, rgba(0, 0, 0, 0) 40.89%);
-  left: 25%;
-}
-.old-page::before {
-  background: linear-gradient(91.93deg, #000000 1.85%, rgba(0, 0, 0, 0) 40.9%), linear-gradient(177.62deg, #000000 1.99%, rgba(0, 0, 0, 0) 70.09%);
-  left: 26%;
-}
-.sport-page::before {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 21.49%, rgba(0, 0, 0, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-  left: 14%;
-}
-.newYear-page::before {
-  background: linear-gradient(90.38deg, rgb(2,2,2) -0.76%, rgba(2, 2, 2, 0) 99.74%);
-  left: 23%;
-}
-.waiter-page::before {
-  background: linear-gradient(90deg, rgb(2,2,2) -1.15%, rgba(2, 2, 2, 0) 100%);
-  left: 11%;
-}
-
 
 .blog .breadcrumbs,
 .reviews .breadcrumbs {
@@ -2293,117 +2207,9 @@ right: -250px;
   display: none;
 }
 
-@media (max-width: 1980px) {
-  .military-page::before {
-    left: 38%;
-    width: 75%;
-  }
-  .sport-page::before {
-    left: 10%;
-  }
-  .newYear-page::before {
-    left: 19%;
-  }
-  .waiter-page::before {
-    left: 9%;
-  }
-}
-
-@media (max-width: 1800px) {
-  .classic-page::before, 
-  .latino-page::before {
-    left: 10%;
-  }
-  .styles-page::before {
-    left: 0;
-  }
-  .latino-page::before {
-    left: 30%;
-  }
-  .military-page::before {
-    left: 37%;
-    width: 80%;
-  }
-  .solo-page::before {
-    left: 20%;
-  }
-  .old-page::before {
-    left: 23%;
-  }
-  .sport-page::before {
-    left: 6%;
-  }
-  .newYear-page::before {
-    left: 19%;
-  }
-  .waiter-page::before {
-    left: 3%;
-  }
-}
-
-@media (max-width: 1600px) {
-  .header-section .background {
-    object-position: center;
-  }
-  .classic-page::before {
-    left: 5%;
-  }
-  .chicago-page::before {
-    left: 75%;
-  }
-  .military-page::before {
-    left: 35%;
-  }
-  .solo-page::before {
-    left: 15%;
-  }
-  .history-page::before {
-    left: 20%;
-  }
-  .old-page::before {
-    left: 20%;
-  }
-  .sport-page::before {
-    left: 0;
-  }
-  .newYear-page::before {
-    left: 14%;
-  }
-  .waiter-page::before {
-    left: 0;
-  }
-}
-
 @media (max-width: 1400px) {
-  .classic-page::before {
-    left: 0;
-  }
-  .military-page::before {
-    left: 33%;
-  }
-  .history-page::before {
-    left: 15%;
-  }
-  .old-page::before {
-    left: 15%;
-  }
-  .newYear-page::before {
-    left: 10%;
-  }
   .album-page::before {
     left: 15%;
-  }
-}
-
-@media (max-width: 1280px) {
-  .latino-page::before {
-    left: 26%;
-  }
-  .solo-page::before {
-    left: 0;
-  }
-  .solo-page.header-section .background {
-    object-position: 70%;
   }
 }
 
@@ -2415,15 +2221,9 @@ right: -250px;
   .flashmob-list__item {
     width: 100%;
   }
-  .newYear-page::before {
-    left: 6%;
-  }
 }
 
 @media (max-width: 1200px) {
-  .military-page::before {
-    left: 30%;
-  }
   .header__navigation-item:not(:last-child) {
     margin-right: 30px;
   }
@@ -2509,27 +2309,6 @@ right: -250px;
   .ball-list__item::before {
     right: 25px;
   }
-  .chicago-page::before {
-    left: 70%;
-  }
-  .latino-page::before {
-    left: 23%;
-  }
-  .history-page::before {
-    left: 9%;
-  }
-  .old-page::before {
-    left: 10%;
-  }
-  .newYear-page::before {
-    left: 0;
-  }
-}
-
-@media (max-width: 1060px) {
-  .old-page::before {
-    left: 7%;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -2561,9 +2340,6 @@ right: -250px;
   .header-section.costumes .background {
     left: 50%;
     height: 870px;
-  }
-  .header-section.styles-page .background {
-    left: 10%;
   }
   .costumes .header-content {
     display: none;
@@ -2640,15 +2416,8 @@ right: -250px;
     visibility: hidden;
   }
 
-  /* .header-section.header-section__dark .background {
-    top: 0;
-    transform: translateX(-50%);
-  } */
   .header-section .background {
     width: auto;
-    /* height: 75%;
-    top: 5%;
-    transform: translateX(-40%) scale(1.2); */
   }
   h1 {
     font-size: 56px;
@@ -2802,7 +2571,7 @@ right: -250px;
     margin-bottom: 142px;
   }
 
-  /* .programs-list__card::after {
+  .programs-list__card::after {
     content: '';
     position: absolute;
     left: 0;
@@ -2811,7 +2580,7 @@ right: -250px;
     width: 100%;
     height: 506px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 34.1%, #FCFCFC 88.91%);
-  } */
+  }
   .programs-list__card {
     padding: 0;
   }
@@ -3130,27 +2899,11 @@ right: -250px;
   .header-section.header-flashmob .background {
     left: 50%;
   }
-  .chicago-page::before {
-    left: 50%;
-  }
-  .latino-page::before {
-    left: 0%;
-  }
-  .military-page::before {
-    left: 0;
-    width: 130%;
-  }
-  .history-page::before {
-    left: 0;
-  }
-  .old-page.header-section .background {
-    left: -20%;
-  }
-  .old-page::before {
-    left: 0;
-  }
   .programs .button {
     display: none;
+  }
+  .programs-list__card .buttons .button {
+    display: flex;
   }
   .button.more {
     margin: 70px auto 117px;
@@ -3196,15 +2949,6 @@ right: -250px;
   .header-section__dark.header-section {
     padding-bottom: 60px;
   }
-  /* .header-section::before {
-    content: "";
-    position: absolute;
-    background: linear-gradient(358.71deg, #F6F6F6 34.1%, rgba(255, 255, 255, 0) 93.47%);
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: -webkit-fill-available;
-  } */
   .header-section.header-ball {
     padding-bottom: 350px;
   }
@@ -3268,9 +3012,6 @@ right: -250px;
     font-size: 18px;
     line-height: 27px;
   }
-  /* .header-section.header-section__dark .background {
-    object-position: -470px 0;
-  } */
   .header-section__dark .header-section__block {
     margin-bottom: 53px;
     justify-content: center;
@@ -3297,9 +3038,7 @@ right: -250px;
     height: 100%;
   }
 
-  .header-section .background {
-    /* transform: translateX(-50%) scale(1.2); */
-  }
+  .header-section .background {}
   .header-section__title {
     max-width: 360px;
     font-size: 50px;
@@ -3612,18 +3351,9 @@ right: -250px;
   .header-section.program-page .header-section__desc {
     margin-bottom: 111px;
   }
-  /* .header-section.program-page::before {
-    display: none;
-  } */
   .header-section.program-page .header-section__heading {
     padding-top: 218px;
   }
-  /* .header-section.program-page .background {
-    object-position: -850px 0;
-  }
-  .header-section.latino-page .background {
-    object-position: -1050px 0;
-  } */
 
   .blog .header-section__title {
     margin-bottom: 70px;
@@ -3779,45 +3509,8 @@ right: -250px;
     display: none;
   }
 
-  .header-section.chicago-page::before {
-    background: linear-gradient(358.79deg, rgb(0, 0, 0) -5.48%, rgba(0, 0, 0, 0) 66.09%), linear-gradient(177.11deg, #000000 8.51%, rgba(0, 0, 0, 0) 51.21%);
-    left: 50%;
-  }
   .header-section.contacts::before {
     background: linear-gradient(179.17deg, rgba(0, 0, 0, 0) 39.11%, #000000 99.19%), linear-gradient(176.82deg, #000000 3.8%, rgba(0, 0, 0, 0) 77.39%);
-  }
-  .latino-page.header-section::before {
-    background: linear-gradient(2.93deg, rgb(0, 0, 0) -2.78%, rgba(0, 0, 0, 0) 75.64%), linear-gradient(179.87deg, #000000 0.11%, rgba(0, 0, 0, 0) 31.81%);
-  }
-  .styles-page.header-section::before {
-    background: linear-gradient(2.95deg, #000000 1.18%, rgba(0, 0, 0, 0) 61.3%), linear-gradient(180deg, rgb(0, 0, 0) -2.52%, rgba(0, 0, 0, 0) 98.65%)
-  }
-  .military-page.header-section::before {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36.71%, #000000 93.78%), linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 56.72%)
-  }
-  .military-page.header-section .background {
-    left: 5%;
-  }
-  .solo-page.header-section {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 42.54%, #000000 100%), linear-gradient(175.04deg, #000000 2.22%, rgba(0, 0, 0, 0) 81.96%);
-  }
-  .solo-page.header-section .background {
-    width: 270%;
-    left: 0;
-  }
-  .history-page.header-section .background {
-    left: 0;
-  }
-  .history-page.header-section::before {
-    background: linear-gradient(91.4deg, #000000 5.97%, rgba(0, 0, 0, 0) 70.61%), linear-gradient(177.37deg, #000000 2.19%, rgba(0, 0, 0, 0) 40.89%);
-    left: -50%;
-    width: -webkit-fill-available;
-  }
-  .old-page.header-section .background {
-    left: -20%;
-  }
-  .old-page.header-section::before {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44.56%, #000000 100%), linear-gradient(177.62deg, #000000 1.99%, rgba(0, 0, 0, 0) 70.09%);
   }
   .program-page .header-section__desc {
     display: none;
@@ -3827,27 +3520,8 @@ right: -250px;
     text-align: center;
     justify-content: center;
     margin-bottom: 111px;
-    font-size: 18px;
-    line-height: 27px;
-  }
-  .sport-page.header-section::before {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 21.49%, rgba(0, 0, 0, 0) 100%), linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-    left: -50%;
-    width: -webkit-fill-available;
-  }
-  .newYear-page.header-section .background {
-    left: 15% !important;
-  }
-  .newYear-page.header-section::before {
-    left: 0;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 34.16%), linear-gradient(180deg, rgba(0, 0, 0, 0) 22.46%, #000000 100%);
-  }
-  .header-section.waiter-page .background {
-    left: 10%;
-  }
-  .waiter-page.header-section::before {
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 34.16%), linear-gradient(180deg, rgba(0, 0, 0, 0) 22.46%, #000000 100%);
-    left: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .album-page.header-section {
@@ -3874,12 +3548,6 @@ right: -250px;
   .buttons {
     gap: 30px;
   }
-  .header-section.styles-page .background {
-    left: -40% !important;
-  }
-  .header-section.waiter-page .background {
-    left: -25% !important;
-  }
   .popup-wrapper {
     padding: 0;
   }
@@ -3890,7 +3558,8 @@ right: -250px;
 
 @media (max-width: 560px) {
   .programs-list__item {
-    height: 286px;
+    /* height: 286px; */
+    height: 400px;
     padding: 30px 40px;
   }
   .programs-list__item .dance-list {
@@ -3978,10 +3647,14 @@ right: -250px;
   .header-section .background {
     height: 75%;
   }
-  .header-section.latino-page .background {
+  .header-section.classic-page .background,
+  .header-section.latino-page .background,
+  .header-section.military-page .background,
+  .header-section.styles-page .background,
+  .header-section.solo-page .background, 
+  .header-section.sport-page .background, 
+  .header-section.newYear-page .background {
     width: 100vw;
-    left: 0;
-    transform: translateX(0);
   }
   .header-section.header-ball .background {
     left: -1270px;
@@ -4028,17 +3701,6 @@ right: -250px;
     height: 96px;
   }
 
-  /* .work-process__item {
-    font-size: 14px;
-    line-height: 18px;
-    margin-left: 70px;
-    height: 80px;
-  }
-  .work-process__item::after {
-    width: 80px;
-    height: 60px;
-    left: -80px;
-  } */
   .dropdown__header {
     padding: 16px 20px 10px 50px;
   }
@@ -4114,9 +3776,6 @@ right: -250px;
   .main-card__left {
     padding: 0 20px 40px 20px;
   }
-  /* .header-section.latino-page .background {
-    object-position: -1250px 0;
-  } */
 
   .blog .blog-item {
     flex-direction: column;
@@ -4146,10 +3805,6 @@ right: -250px;
   .flashmob-list__item::after {
     font-size: 12px;
     line-height: 18px;
-  }
-
-  .history-page.header-section .background {
-    left: -15%;
   }
 }
 
@@ -4239,6 +3894,9 @@ right: -250px;
   .work-process__item {
     margin-left: 85px;
   }
+  .programs-list__item .dance-list__item a {
+    width: max-content;
+  }
 }
 
 @media (max-width: 460px) {
@@ -4261,6 +3919,7 @@ right: -250px;
   }
   .programs-list__item .dance-list {
     width: 270px;
+    padding-right: 88px;
   }
   .programs-list__item.latino .programs-list__img {
     right: -95px;
@@ -4337,12 +3996,16 @@ right: -250px;
     font-size: 44px !important;
     line-height: 48px !important;
   }
-  .header-section .background {
-    /* left: 40%; */
-    /* transform: translateX(-60%) scale(1.2); */
-  }
+  .header-section .background {}
   .statistic-list__item {
     width: 100px;
+  }
+  .programs-list__item.history .dance-list,
+  .programs-list__item.old .dance-list,
+  .programs-list__item.sport .dance-list,
+  .programs-list__item.chicago .dance-list,
+  .programs-list__item.newyear .dance-list {
+    width: 170px;
   }
 }
 
@@ -4358,6 +4021,12 @@ right: -250px;
 @media (max-width: 380px) {
   .about-director__right::before {
     height: 130px;
+  }
+}
+
+@media (max-width: 350px) {
+  .programs-list__item.style .dance-list {
+    width: 170px;
   }
 }
 
@@ -4554,9 +4223,6 @@ right: -250px;
 }
 .media__item span {
 	position: absolute;
-	/* top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%); */
   left: 28px;
   top: 20px;
   z-index: 1;

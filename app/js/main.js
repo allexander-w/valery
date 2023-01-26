@@ -173,3 +173,18 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     },
   },
 });
+
+let $items = document.querySelectorAll(".portfolio__item")
+const items = [...$items]
+
+let size = 8
+let res = []
+
+for (let i = 0; i < Math.ceil(items.length / size); i++) {
+  res[i] = items.slice((i * size), (i * size) + size)
+}
+
+for (let i = 1; i < res.length; i += 8) {
+  items[i].gridRowStart = 6;
+  items[i].gridRowEnd = 8;
+}

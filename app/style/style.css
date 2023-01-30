@@ -4242,20 +4242,23 @@ right: -250px;
   color: #fff;
   height: fit-content;
 }
-.media__item:nth-child(2) .desc,
-.media__item:nth-child(4) .desc,
-.media__item:nth-child(6) .desc {
-  left: 28px;
+.media__item:nth-child(6n-4) > .desc,
+.media__item:nth-child(6n-2) > .desc,
+.media__item:nth-child(6n) > .desc {
+  left: 28px !important;
   bottom: 20px;
   top: inherit;
   max-width: 225px;
 }
-.media__item:nth-child(2) .icon-presentation, 
-.media__item:nth-child(4) .icon-presentation,
-.media__item:nth-child(6) .icon-presentation {
+.media__item:nth-child(6n-4) > .icon-presentation, 
+.media__item:nth-child(6n-2) > .icon-presentation,
+.media__item:nth-child(6n) > .icon-presentation {
   right: 28px;
   bottom: 20px;
   left: inherit;
+}
+.media__item:nth-child(6n-3) > .desc h3 {
+  text-transform: inherit;
 }
 .media__item .icon-presentation {
   position: absolute;
@@ -4273,10 +4276,11 @@ right: -250px;
   line-height: 150%;
 }
 .media__item .desc h3 {
+  display: inline;
   font-size: 30px;
   line-height: 32px;
-  text-decoration: underline;
   text-transform: uppercase;
+  border-bottom: 2px solid #fff;
 }
 .media .button {
   width: 280px;
@@ -4297,7 +4301,6 @@ right: -250px;
 .header-section__padding.header-section .dance-list {
   max-width: 100%;
 }
-
 
 img {
   width: 100%;
@@ -4432,6 +4435,21 @@ img {
   .media__item {
     height: 360px !important;
   }
+  .media__item::before {
+    content: "";
+    position: absolute;
+    right: 32px;
+    bottom: 35px;
+    width: 100px;
+    height: 14px;
+    background: right / cover no-repeat url(../img/arrow.svg);
+    transition: all .3s ease;
+    z-index: 1;
+  }
+  .media__item:hover::before {
+    right: 28px;
+    width: 105px;
+  }
   .media {
     margin-bottom: 123px;
   } 
@@ -4449,7 +4467,7 @@ img {
     left: 33px !important;
   }
   .media__item .desc h3 {
-    text-decoration: none;
+    border-bottom: none;
   }
 }
 
@@ -4461,6 +4479,20 @@ img {
   .portfolio__item,
   .media__item {
     height: 349px !important;
+  }
+}
+
+@media (max-width: 460px) {
+  .media__item .desc {
+    left: 15px !important;
+  }
+  .media__item::before {
+    right: 15px;
+    width: 60px;
+  }
+  .media__item:hover::before {
+    right: 10px;
+    width: 65px;
   }
 }
 

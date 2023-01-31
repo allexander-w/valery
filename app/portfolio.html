@@ -117,11 +117,14 @@
     </section>
 
     <section class="header-section header-section__dark header-portfolio">
-      <img
-        class="background"
-        src="img/portfolio/portfolio-background.png"
-        alt="header-background"
-      />
+      <picture>
+        <source media="(max-width:480px)" srcset="img/portfolio/desktop-bg.png">
+        <img
+          class="background"
+          src="img/portfolio/desktop-bg.png"
+          alt="header-background"
+        />
+      </picture>
 
       <div class="container header-section__heading">
         <div class="breadcrumbs">

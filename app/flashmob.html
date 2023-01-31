@@ -117,11 +117,14 @@
     </section>
 
     <section class="header-section header-section__dark header-flashmob">
-      <img
-        class="background"
-        src="img/flashmob/flashmob-background.png"
-        alt="header-background"
-      />
+      <picture>
+        <source media="(max-width:480px)" srcset="img/flashmob/mobile-bg.png">
+        <img
+          class="background"
+          src="img/flashmob/desktop-bg.png"
+          alt="header-background"
+        />
+      </picture>
 
       <div class="container header-section__heading">
         <div class="breadcrumbs">

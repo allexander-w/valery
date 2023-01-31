@@ -117,11 +117,14 @@
     </section>
 
     <section class="header-section header-section__dark contacts">
-      <img
-        class="background"
-        src="img/contacts/contacts-background.png"
-        alt="header-background"
-      />
+      <picture>
+        <source media="(max-width:480px)" srcset="img/contacts/mobile-bg.png">
+        <img
+          class="background"
+          src="img/contacts/desktop-bg.png"
+          alt="header-background"
+        />
+      </picture>
 
       <div class="container header-section__heading">
         <div class="breadcrumbs">

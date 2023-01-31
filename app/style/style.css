@@ -3065,6 +3065,7 @@ right: -250px;
     height: 376px;
   }
   .about-director__left {
+    width: 245px;
     height: 250px;
   }
   .about-director__right h3 {
@@ -3463,6 +3464,12 @@ right: -250px;
   .album-page.header-section .header-section__heading {
     padding-top: 300px;
   }
+  .about__swiper .swiper-slide {
+    padding: 20px 15px 0 15px;
+  }
+  .about__swiper .swiper-slide h3 {
+    margin-bottom: 14px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -3657,6 +3664,7 @@ right: -250px;
     height: 159px;
   }
   .about-director__left {
+    width: 200px;
     height: 200px;
   } 
   .about-director__right h3 {
@@ -3740,7 +3748,7 @@ right: -250px;
     line-height: 43px;
   }
   .about__swiper .swiper-slide p {
-    font-size: 14.3405px;
+    font-size: 14px;
     line-height: 22px;
   }
   .about__swiper .swiper-slide::after {

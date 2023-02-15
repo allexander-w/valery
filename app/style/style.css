@@ -227,6 +227,9 @@ h1 {
   max-width: 100%;
 }
 
+.header-section.classic-page .presentation {
+  width: 250px;
+}
 .header-section.classic-page .icon-presentation {
   width: 60px;
   height: 60px;
@@ -234,6 +237,9 @@ h1 {
 }
 .header-section.classic-page .presentation:hover .icon-presentation {
   background-size: 18px;
+}
+.header-section.classic-page .presentation span {
+  margin-left: 20px;
 }
 
 .header__contacts > div {

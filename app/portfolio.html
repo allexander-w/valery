@@ -127,12 +127,14 @@
       </picture>
 
       <div class="container header-section__heading">
-        <div class="breadcrumbs">
-          <div class="breadcrums-item">
-            <a href="/index.html">Главная</a>
-          </div>
+        <div class="header-block">
+          <a href="/index.html" class="breadcrumbs-item">
+            Главная
+          </a>
+
+          <h1 class="header-section__title">ПОРТФОЛИО</h1>
         </div>
-        <h1 class="header-section__title">ПОРТФОЛИО</h1>
+
 
         <p class="header-section__desc">
           В данном разделе мы показываем вам часть наших работ, мероприятий, концертов, праздников, на которых мы выступаем.
@@ -151,15 +153,84 @@
     <section class="portfolio">
       <div class="container">
         <ul class="portfolio__head">
-          <li class="portfolio__head-item" title="Свадьба"> <p>Свадьба</p> </li>
-          <li class="portfolio__head-item" title="Дни рождения"> <p>Дни рождения</p> </li>
-          <li class="portfolio__head-item item__active" title="Корпоративы"> <p>Корпоративы</p> </li>
-          <li class="portfolio__head-item" title="Детские праздники"> <p>Детские праздники</p> </li>
-          <li class="portfolio__head-item" title="Балы"> <p>Балы</p> </li>
-          <li class="portfolio__head-item" title="Другие мероприятия"> <p>Другие мероприятия</p> </li>
+          <li class="portfolio__head-item" data-tab="tab-1" title="Свадьба"> <p>Свадьба</p> </li>
+          <li class="portfolio__head-item" data-tab="tab-2" title="Дни рождения"> <p>Дни рождения</p> </li>
+          <li class="portfolio__head-item active" data-tab="tab-3" title="Корпоративы"> <p>Корпоративы</p> </li>
+          <li class="portfolio__head-item" data-tab="tab-4" title="Детские праздники"> <p>Детские праздники</p> </li>
+          <li class="portfolio__head-item" data-tab="tab-5" title="Балы"> <p>Балы</p> </li>
+          <li class="portfolio__head-item" data-tab="tab-6" title="Другие мероприятия"> <p>Другие мероприятия</p> </li>
         </ul>
 
-        <div class="portfolio__wrapper">
+        <div class="portfolio__content" id="tab-1">
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio1.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>Behind the mask <br> январь 2019</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio2.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>Выступление <br> на FIFA 2018</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio3.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>ДЖАГЕР</h3>
+          </a>
+        </div>
+
+        <div class="portfolio__content" id="tab-2">
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio1.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>Behind the mask <br> январь 2019</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio2.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>Выступление <br> на FIFA 2018</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio3.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>ДЖАГЕР</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio2.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>ИСТРА <br> НОВЫЙ ГОД</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio3.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>КОРПОРАТИВ <br> 2019-20</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio2.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>НАОЛЕОН <br> ДЕКАБРЬ 2019</h3>
+          </a>
+        </div>
+
+        <div class="portfolio__content active" id="tab-3">
           <a href="./album.html" 
             class="portfolio__item"
             style="background-image: url(img/portfolio/portfolio1.png);"
@@ -215,6 +286,92 @@
           >
             <p>04.03.2020</p>
             <h3>Выступление <br> на FIFA 2018</h3>
+          </a>
+        </div>
+
+        <div class="portfolio__content" id="tab-4">
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio1.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>Behind the mask <br> январь 2019</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio2.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>Выступление <br> на FIFA 2018</h3>
+          </a>
+        </div>
+
+        <div class="portfolio__content" id="tab-5">
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio1.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>Behind the mask <br> январь 2019</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio2.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>Выступление <br> на FIFA 2018</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio3.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>ДЖАГЕР</h3>
+          </a>
+        </div>
+
+        <div class="portfolio__content" id="tab-6">
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio1.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>Behind the mask <br> январь 2019</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio2.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>Выступление <br> на FIFA 2018</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio3.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>ДЖАГЕР</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio2.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>ИСТРА <br> НОВЫЙ ГОД</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio3.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>КОРПОРАТИВ <br> 2019-20</h3>
+          </a>
+          <a href="./album.html" 
+            class="portfolio__item"
+            style="background-image: url(img/portfolio/portfolio2.png);"
+          >
+            <p>04.03.2020</p>
+            <h3>НАОЛЕОН <br> ДЕКАБРЬ 2019</h3>
           </a>
         </div>
       </div>
@@ -306,7 +463,7 @@
 
     <script>
       const count = 8;
-      const children = document.querySelectorAll(".portfolio__item");
+      const children = document.querySelectorAll(".portfolio__content.active .portfolio__item");
       const base = [[1, 2], [1, 3], [1, 2], [2, 4], [3, 4], [2, 4], [4, 6], [4, 6]];
       base.forEach((num, index) => {
         if ( children[index] ) {

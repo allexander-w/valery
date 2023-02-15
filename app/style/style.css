@@ -80,18 +80,19 @@ h1 {
   text-transform: uppercase;
 }
 
-.breadcrumbs {
-  display: flex;
-  gap: 50px;
-  margin-bottom: 10px;
+.header-block {
+  /* margin-bottom: 10px; */
 }
-.breadcrums-item {
+.header-block .header-section__title {
+  margin: 10px 0 27px;
+}
+.breadcrumbs-item {
   position: relative;
-  color: #858585;
+  color: #858585 !important;
   font-size: 16px;
   line-height: 22px;
 }
-.breadcrums-item::after {
+.breadcrumbs-item::after {
   content: "";
   position: absolute;
   right: -40px;
@@ -101,7 +102,7 @@ h1 {
   height: 1px;
   background: center / cover no-repeat url(../img/arrow-white.svg);
 }
-.breadcrums-item:first-child::before {
+.breadcrumbs-item:first-child::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -111,8 +112,11 @@ h1 {
   width: 15px;
   height: 15px;
 }
-.breadcrums-item:first-child {
+.breadcrumbs-item:first-child {
   padding-left: 25px;
+}
+.breadcrumbs-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .header {
@@ -206,8 +210,31 @@ h1 {
 }
 .icon-presentation:hover {
   background: rgba(217,48,48,0.69) url(../img/play.svg) 55% 50% no-repeat;
+  background-size: 12px 14px;
 }
+.icon-presentation.icon-width {
+  width: 49px;
+  height: 49px;
+  background-size: 16px;
+}
+.icon-presentation.icon-width:hover {
+  background-size: 16px;
+}
+
 @keyframes pulse {to {box-shadow: 0 0 0 15px rgba(217, 48, 48, 0);}}
+
+.header-section.classic-page .header-section__title {
+  max-width: 100%;
+}
+
+.header-section.classic-page .icon-presentation {
+  width: 60px;
+  height: 60px;
+  background-size: 18px;
+}
+.header-section.classic-page .presentation:hover .icon-presentation {
+  background-size: 18px;
+}
 
 .header__contacts > div {
   display: flex;
@@ -333,7 +360,7 @@ h1 {
   color: #C63B3B;
 }
 .header-section .background {
-  width: 100%;
+  width: 100vw;
   height: 110%;
   position: absolute;
   top: 0;
@@ -1501,7 +1528,7 @@ right: -250px;
   width: min-content;
 }
 
-.latino-page br {
+.latino-page h1 br {
   display: none;
 }
 .spectacle-page.header-section {
@@ -1514,8 +1541,9 @@ right: -250px;
   background: transparent;
 }
 
-.blog .breadcrumbs,
-.reviews .breadcrumbs {
+.blog .header-block,
+.reviews .header-block {
+  text-align: center;
   transform: translateX(-30px);
   justify-content: center;
 }
@@ -2914,7 +2942,7 @@ right: -250px;
     margin-bottom: 41px;
   }
 
-  .breadcrumbs {
+  .header-block {
     display: none;
   }
   .header-section .dance-list {
@@ -3065,6 +3093,7 @@ right: -250px;
     height: 376px;
   }
   .about-director__left {
+    width: 245px;
     height: 250px;
   }
   .about-director__right h3 {
@@ -3463,6 +3492,12 @@ right: -250px;
   .album-page.header-section .header-section__heading {
     padding-top: 300px;
   }
+  .about__swiper .swiper-slide {
+    padding: 20px 15px 0 15px;
+  }
+  .about__swiper .swiper-slide h3 {
+    margin-bottom: 14px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -3561,8 +3596,7 @@ right: -250px;
   .arrow {
     bottom: 30px;
   }
-}
-  
+}  
 
 @media (max-width: 520px) {
   .footer__form h3 {
@@ -3589,7 +3623,7 @@ right: -250px;
     justify-content: space-between;
   }
   .header-section__block .button {
-    width: 275.42px;
+    width: 275px;
     height: 65px;
     font-size: 20px;
     line-height: 27px;
@@ -3607,6 +3641,9 @@ right: -250px;
   .presentation .icon-presentation {
     width: 67px;
     height: 67px;
+    background-size: 25px 25px;
+  }
+  .presentation:hover .icon-presentation {
     background-size: 25px 25px;
   }
   .statistic-list {
@@ -3657,6 +3694,8 @@ right: -250px;
     height: 159px;
   }
   .about-director__left {
+    width: 200px;
+    
     height: 200px;
   } 
   .about-director__right h3 {
@@ -3740,7 +3779,7 @@ right: -250px;
     line-height: 43px;
   }
   .about__swiper .swiper-slide p {
-    font-size: 14.3405px;
+    font-size: 14px;
     line-height: 22px;
   }
   .about__swiper .swiper-slide::after {
@@ -3930,7 +3969,10 @@ right: -250px;
   line-height: 25px;
 }
 
-.portfolio__wrapper {
+.portfolio__content {
+  display: none;
+}
+.portfolio__content.active {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-gap: 10px;
@@ -4030,11 +4072,13 @@ right: -250px;
 .portfolio__head-item {
   position: relative;
   padding-bottom: 12px;
+  border-bottom: 2px solid transparent;
   cursor: pointer;
 }
-.portfolio__head .item__active {
+.portfolio__head-item.active {
   font-weight: bold;
   border-bottom: 2px solid #CD5353;
+  transition: all .3s ease;
 }
 .portfolio__head-item:hover {
   font-weight: bold;
@@ -4312,7 +4356,7 @@ img {
 }
 
 @media (max-width: 992px) {
-  .portfolio__wrapper,
+  .portfolio__content,
   .media__wrapper {
     display: flex;
     flex-direction: column;

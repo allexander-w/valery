@@ -36,6 +36,7 @@ const aboutSwiper = new Swiper(".about__swiper", {
   },
   breakpoints: {
     320: {
+      spaceBetween: 20,
       slidesPerView: 6,
       direction: "vertical",
       scrollbar: false,
@@ -188,3 +189,21 @@ for (let i = 1; i < res.length; i += 8) {
   items[i].gridRowStart = 6;
   items[i].gridRowEnd = 8;
 }
+
+
+const portfolioTabs = document.querySelectorAll(".portfolio__head-item");
+const portfolioTabsContent = document.querySelectorAll(".portfolio__content");
+
+portfolioTabs.forEach(function(portfolioTab) {
+  portfolioTab.addEventListener("click", function() {
+    const tab = this.dataset.tab;
+    const activeTab = document.querySelector(".portfolio__head-item.active");
+    const activeTabContent = document.querySelector(".portfolio__content.active");
+
+    activeTab.classList.remove("active");
+    activeTabContent.classList.remove("active");
+
+    this.classList.add("active");
+    document.getElementById(tab).classList.add("active");
+  });
+});

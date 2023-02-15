@@ -20,9 +20,6 @@ const css = async cb => {
 
 const html = async cb => {
   await src("app/**.html")
-    .pipe(htmlmin({
-      collapseWhitespace: true
-    }))
     .pipe(dest("dist"))
 
   cb()

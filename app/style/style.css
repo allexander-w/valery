@@ -4567,3 +4567,8 @@ img {
 .is-nav-selected .fancybox__thumb::after {
   display: none;
 }
+
+.video-overflow .fancybox__track {
+  overflow-x: hidden !important;
+  transform: inherit !important;
+}

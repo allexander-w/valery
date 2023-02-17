@@ -169,9 +169,10 @@ Fancybox.bind('[data-fancybox="video"]', {
   Toolbar: false,
   Thumbs: false,
   showNavArrows: false,
+  mainClass: "video-overflow",
   Carousel: {
-    Navigation: false
-  }
+    Navigation: false,
+  },
 });
 
 

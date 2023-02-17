@@ -151,9 +151,6 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   Toolbar: false,
   closeButton: false,
   Thumbs: false,
-  Image: {
-    zoom: false,
-  },
 
   on: {
     initCarousel: (fancybox) => {
@@ -164,31 +161,18 @@ Fancybox.bind('[data-fancybox="gallery"]', {
         `url("${slide.$thumb.src}")`
       );
     },
-    "Carousel.change": (fancybox, carousel, to, from) => {
-      const slide = carousel.slides[to];
-
-      fancybox.$container.style.setProperty(
-        "--bg-image",
-        `url("${slide.$thumb.src}")`
-      );
-    },
   },
 });
 
-let $items = document.querySelectorAll(".portfolio__item")
-const items = [...$items]
-
-let size = 8
-let res = []
-
-for (let i = 0; i < Math.ceil(items.length / size); i++) {
-  res[i] = items.slice((i * size), (i * size) + size)
-}
-
-for (let i = 1; i < res.length; i += 8) {
-  items[i].gridRowStart = 6;
-  items[i].gridRowEnd = 8;
-}
+Fancybox.bind('[data-fancybox="video"]', {
+  dragToClose: false,
+  Toolbar: false,
+  Thumbs: false,
+  showNavArrows: false,
+  Carousel: {
+    Navigation: false
+  }
+});
 
 
 const portfolioTabs = document.querySelectorAll(".portfolio__head-item");

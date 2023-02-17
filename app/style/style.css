@@ -710,6 +710,16 @@ h1 {
   opacity: 1;
 }
 
+.swiper .swiper-slide .icon-presentation {
+  width: 110px;
+  height: 110px;
+  background-size: 41px;
+}
+
+.swiper .swiper-slide .icon-presentation:hover {
+  background-size: 41px;
+}
+
 .swiper-button-prev:after,
 .swiper-button-next:after {
   display: none;
@@ -1051,9 +1061,6 @@ form .button {
 .review__swiper .swiper-wrapper {
   align-items: center;
   height: 360px;
-}
-.header-section.reviews .pagination {
-  bottom: -83px;
 }
 .review__swiper .swiper-slide {
   width: 360px !important;
@@ -1547,19 +1554,27 @@ right: -250px;
   background: transparent;
 }
 
+.blog {
+  margin-bottom: 140px;
+}
 .blog .header-block,
 .reviews .header-block {
   text-align: center;
-  transform: translateX(-30px);
   justify-content: center;
+}
+.blog .breadcrumbs-item {
+  margin-left: -60px;
+}
+.reviews .breadcrumbs-item {
+  margin-left: -135px;
 }
 .blog .header-section__title,
 .reviews .header-section__title {
   max-width: 100%;
   text-align: center;
-  margin-bottom: 139px;
+  /* margin-bottom: 139px; */
 }
-.reviews .header-section__title {
+.header-section.reviews {
   margin-bottom: 116px;
 }
 .blog .blog-wrapper {
@@ -1608,10 +1623,11 @@ right: -250px;
   line-height: 27px;
 }
 
-.reviews .review__swiper .swiper-wrapper {
-  margin-left: -70px;
+.reviews-wrapper {
+  margin-bottom: 118px;
 }
-.reviews .pagination {
+
+.reviews-wrapper .pagination {
   right: 50%;
   transform: translateX(50%);
 }
@@ -1742,7 +1758,10 @@ right: -250px;
 }
 
 .review__swiper-cards {
+  position: relative;
   margin-top: 157px;
+  margin-left: 20px;
+  padding-bottom: 85px;
   overflow-x: clip;
 }
 .review__swiper-cards .swiper-wrapper {
@@ -2202,6 +2221,33 @@ right: -250px;
   display: none;
 }
 
+.header-section.detail {
+  margin-bottom: 60px;
+}
+.detail.header-section__heading {
+  padding-top: 94px;
+}
+.detail .header-section__title {
+  margin: 64px 0 27px;
+  text-align: center;
+  max-width: 100%;
+}
+.detail-wrapper {
+  margin-bottom: 140px;
+}
+.detail-container {
+  max-width: 1120px;
+}
+.detail-wrapper p {
+  margin-bottom: 14px;
+  text-indent: 1.5em;
+  text-align: justify;
+}
+p.detail-date {
+  margin-top: 30px;
+  text-align: right;
+}
+
 @media (max-width: 1400px) {
   .album-page::before {
     left: 15%;
@@ -2331,6 +2377,9 @@ right: -250px;
   }
   .header-section__heading {
     padding-top: 142px;
+  }
+  .blog .header-section__heading {
+    padding-top: 64px;
   }
   .header-section.costumes .background {
     width: 100%;
@@ -2471,6 +2520,14 @@ right: -250px;
   }
   .swiper .swiper-slide {
     width: 80%;
+  }
+  .swiper .swiper-slide .icon-presentation {
+    width: 90px;
+    height: 90px;
+    background-size: 24px;
+  }
+  .swiper .swiper-slide .icon-presentation:hover {
+    background-size: 24px;
   }
   .pagination {
     display: none;
@@ -2948,7 +3005,7 @@ right: -250px;
     margin-bottom: 41px;
   }
 
-  .header-block {
+  .header-block .breadcrumbs-item {
     display: none;
   }
   .header-section .dance-list {
@@ -3073,6 +3130,14 @@ right: -250px;
     height: 65px;
     font-size: 20px;
     line-height: 27px;
+  }
+  .swiper .swiper-slide .icon-presentation {
+    width: 40px;
+    height: 40px;
+    background-size: 12px;
+  }
+  .swiper .swiper-slide .icon-presentation:hover {
+    background-size: 12px;
   }
   .heading.heading__center {
     margin: 0 0 40px;
@@ -3326,8 +3391,11 @@ right: -250px;
     padding-top: 218px;
   }
 
-  .blog .header-section__title {
-    margin-bottom: 70px;
+  .blog {
+    margin-bottom: 100px;
+  }
+  .header-section.blog {
+    margin-bottom: 40px;
   }
   .reviews .header-section__title {
     margin-bottom: 40px;
@@ -3347,7 +3415,14 @@ right: -250px;
     line-height: 24px;
   }
 
-  .reviews .review__swiper .swiper-wrapper {
+  .detail .header-section__heading {
+    padding-top: 40px;
+  }
+  .detail .header-section__title {
+    margin: 0 0 27px;
+  }
+
+  .reviews-wrapper .review__swiper .swiper-wrapper {
     margin-left: 0;
   }
 
@@ -3365,6 +3440,7 @@ right: -250px;
   .review__swiper-cards {
     margin-top: 180px;
     margin-bottom: 180px;
+    margin-left: 0;
   }
   .review__swiper-cards .swiper-slide {
     width: 100% !important;
@@ -3373,6 +3449,9 @@ right: -250px;
   }
   .review__swiper-cards .swiper-slide .swiper-slide__img {
     height: 360px;
+  }
+  .review__swiper-cards .swiper-wrapper {
+    margin-left: -30px;
   }
 
   .popup {
@@ -4231,7 +4310,7 @@ right: -250px;
   cursor: pointer;
 }
 .play-prezi p {
-  margin-left: 9px;
+  margin-left: 16px;
   font-size: 16px;
   line-height: 20px;
 }

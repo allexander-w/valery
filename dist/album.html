@@ -117,11 +117,14 @@
     </section>
 
     <section class="header-section header-section__dark album-page">
-      <img
-        class="background"
-        src="img/album/BG.png"
-        alt="header-background"
-      />
+      <picture>
+        <source media="(max-width:480px)" srcset="img/album/mobile-bg.png">
+        <img
+          class="background"
+          src="img/album/desktop-bg.png"
+          alt="header-background"
+        />
+      </picture>
 
       <div class="container header-section__heading">
         <div class="header-block">
@@ -141,7 +144,7 @@
 
         <div class="header-section__block">
           <a 
-            data-fancybox="video"
+            data-fancybox="presentation"
             href="https://youtu.be/eHGKf4XqLi0"
             class="presentation"
           >

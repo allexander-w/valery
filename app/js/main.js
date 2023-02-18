@@ -151,16 +151,16 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   Toolbar: false,
   closeButton: false,
   Thumbs: false,
+});
 
-  on: {
-    initCarousel: (fancybox) => {
-      const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
-
-      fancybox.$container.style.setProperty(
-        "--bg-image",
-        `url("${slide.$thumb.src}")`
-      );
-    },
+Fancybox.bind('[data-fancybox="presentation"]', {
+  dragToClose: false,
+  Toolbar: false,
+  Thumbs: false,
+  showNavArrows: false,
+  mainClass: "video-overflow",
+  Carousel: {
+    Navigation: false,
   },
 });
 
@@ -170,9 +170,6 @@ Fancybox.bind('[data-fancybox="video"]', {
   Thumbs: false,
   showNavArrows: false,
   mainClass: "video-overflow",
-  Carousel: {
-    Navigation: false,
-  },
 });
 
 

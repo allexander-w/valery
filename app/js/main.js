@@ -55,7 +55,7 @@ const aboutSwiper = new Swiper(".about__swiper", {
 
 const reviewSwiper = new Swiper(".review__swiper", {
   slidesPerView: 3,
-  loop: true,
+  loop: document.querySelectorAll(".review__swiper .swiper-slide").length > 2 ? true : false,
   centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
@@ -78,7 +78,6 @@ const reviewSwiper = new Swiper(".review__swiper", {
 
 const barSlider = new Swiper(".bar-slider", {
   slidesPerView: 1,
-  loop: true,
   pagination: {
     el: '.swiper-pagination',
     type: "fraction",
@@ -90,8 +89,8 @@ const barSlider = new Swiper(".bar-slider", {
 });
 
 const reviewSwiperCards = new Swiper(".review__swiper-cards", {
-  slidesPerView: 3,
-  loop: true,
+  // slidesPerView: 3,
+  loop: document.querySelectorAll(".review__swiper-cards .swiper-slide").length > 2 ? true : false,
   centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
@@ -104,7 +103,7 @@ const reviewSwiperCards = new Swiper(".review__swiper-cards", {
 
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: "auto",
     },
     767: {
       slidesPerView: 3,
@@ -153,25 +152,13 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   Thumbs: false,
 });
 
-Fancybox.bind('[data-fancybox="presentation"]', {
-  dragToClose: false,
-  Toolbar: false,
-  Thumbs: false,
-  showNavArrows: false,
-  mainClass: "video-overflow",
-  Carousel: {
-    Navigation: false,
-  },
-});
-
-Fancybox.bind('[data-fancybox="video"]', {
+Fancybox.bind('[data-fancybox]', {
   dragToClose: false,
   Toolbar: false,
   Thumbs: false,
   showNavArrows: false,
   mainClass: "video-overflow",
 });
-
 
 const portfolioTabs = document.querySelectorAll(".portfolio__head-item");
 const portfolioTabsContent = document.querySelectorAll(".portfolio__content");
